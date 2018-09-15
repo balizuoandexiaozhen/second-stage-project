@@ -96,6 +96,7 @@ header {
                 font-weight: bolder;
                 line-height: 100%;
                 color: #fff;
+                cursor: pointer;
             }
     
         }
@@ -123,6 +124,7 @@ header {
                     align-items: center;
                     .iconfont {
                         color: #13D1BE;
+                        font-size: 25px;
                     }
                     
                 }
@@ -153,23 +155,63 @@ section {
     padding: 10px 36.5px 0 36.5px;
     background: #F8F8F8;
     .nav {
+        display: flex;
         .nav-list {
             width: 230px;
+            font-size: 13px;
+            color: #fff;
             // background: rgba(2,181,157,.85);
             .classall {
                 height: 60px;
+                font-size: 16px;
                 line-height: 60px;
                 text-align: center;
                 margin-top: -60px;
-                background: rgba(2,181,157,.75);
+                background: rgba(2,181,157,.7);
 
             }
             ul {
                 height: 415px;
-                background: rgba(2,181,157,.75);
+                width: 100%;
+                background: rgba(2,181,157,.7);
+                display: flex;
+                flex-direction: column;
                 li {
-                    padding: 0 12px; 
+                    flex-grow: 1;
+                    padding: 0 12px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .nav-icon {
+                        margin-right: 10px;
+                    } 
+                    // .nav-li-font {
+                    //     float: left;
+                    //     // margin
+                    // }
                 }
+            }
+        }
+        .nav-content {     
+            .nav-content-top {
+                display: flex;
+                .nav-carousel {
+                    width: 550px;
+                    height: 240px;
+                    background: red;
+                }
+                .nav-content-top2 {
+                    width: 150px;
+                    height:240px;
+                    background: blue;
+                }
+                .nav-login {
+                    width: 230px;
+                    height: 240px;
+                }
+            }
+            .nav-content-bottom {
+
             }
         }
     }

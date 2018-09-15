@@ -26,10 +26,27 @@ input, button {
     url('/iconfont/icon-header/iconfont.svg#iconfont') format('svg');
   } 
 
-.iconfont{
+// .iconfont{
+//     font-family:"iconfont" !important;
+//     font-size:25px;font-style:normal;
+//     -webkit-font-smoothing: antialiased;
+//     -webkit-text-stroke-width: 0.2px;
+//     -moz-osx-font-smoothing: grayscale;
+// }
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('/iconfont/icon-nav/iconfont.eot');
+    src: url('/iconfont/icon-nav/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('/iconfont/icon-nav/iconfont.woff') format('woff'),
+    url('/iconfont/icon-nav/iconfont.ttf') format('truetype'),
+    url('/iconfont/icon-nav/iconfont.svg#iconfont') format('svg');
+  }
+
+  .iconfont{
     font-family:"iconfont" !important;
-    font-size:25px;font-style:normal;
+    font-size:16px;font-style:normal;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
-}
+  }
