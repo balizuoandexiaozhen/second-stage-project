@@ -61,5 +61,14 @@ header {
         width: 126px;
         height: 46px;
     }
-    
+
+    .header-search {
+        width: 550px;
+        height: 40px;
+        border: 1px solid #13D1BE;
+        .txt {
+            height: 100%;
+        }
+    }
+
 }
