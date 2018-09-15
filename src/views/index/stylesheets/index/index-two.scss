@@ -1,3 +1,48 @@
-h1 {
-    font-size: 5em;
+body {
+    background: #fff;
+}
+
+.header-bar {
+    height: 40px;
+    background: #F8F8F8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #999;  
+    font-size: 12px;
+    padding: 0 45px;
+}
+
+.header-bar-left {
+    .curent-city,.change-city,.city-guess,.login-in,.login-out:hover {
+        color: #31BBAC;
+    }
+    .change-city {
+        margin: 0 4px;
+        border: 1px solid #E5E5E5;
+        border-radius: 2px;
+        padding: 0 2px;
+    }  
+    
+    .city-guess {
+        margin: 0 4px;
+        color: #999;
+    }
+}
+.header-bar-right {
+    .header-bar-list {
+        // display: flex;
+        // li {
+        //     padding: 0 14px;
+        // }
+        // li:nth-of-type(1) {
+        //     position: relative
+        // }
+        // .mine-meituan {
+        //     position: absolute;
+        //     top: 42px;
+        //     left: 0;
+        // }
+        
+    }
 }
