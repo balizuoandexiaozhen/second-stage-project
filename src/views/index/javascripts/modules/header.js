@@ -2,8 +2,14 @@
 
 // 引入nav
 
-const nav = require('./nav')
+const nav = require('./header-nav')
 
-nav()
 
-console.log('header')
+
+$.ajax({
+    type:"get",
+    url:"/json/header.json",   
+    success: function(msg){
+        console.log("msg");
+    }
+});
