@@ -1,0 +1,101 @@
+{
+    "nav-category": [
+        {
+            "cid": "01",
+            "icon": "&#xe60a;",
+            "class": "美食"
+        },
+        {
+            "cid": "02",
+            "icon": "&#xe60a;",
+            "class": "美食"
+        },
+        {
+            "cid": "03",
+            "icon": "&#xe60a;",
+            "class": "美食"
+        },
+        {
+            "cid": "04",
+            "icon": "&#xe60a;",
+            "class": "美食"
+        },
+        {
+            "cid": "05",
+            "icon": "&#xe60a;",
+            "class": "美食"
+        },
+        {
+            "cid": "06",
+            "icon": "&#xe60a;",
+            "class": "美食"
+        },
+        {
+            "cid": "07",
+            "icon": "&#xe60a;",
+            "class": "美食"
+        },
+        {
+            "cid": "08",
+            "icon": "&#xe60a;",
+            "class": "美食"
+        },
+        {
+            "cid": "09",
+            "icon": "&#xe60a;",
+            "class": "美食"
+        },
+        {
+            "cid": "10",
+            "icon": "&#xe60a;",
+            "class": "美食"
+        },
+        {
+            "cid": "11",
+            "icon": "&#xe60a;",
+            "class": "美食"
+        },
+
+        {
+            "cid": "12",
+            "icon": "&#xe60a;",
+            "class": "美食"
+        },
+        {
+            "cid": "13",
+            "icon": "&#xe60a;",
+            "class": "美食"
+        },
+
+        {
+            "cid": "14",
+            "icon": "&#xe60a;",
+            "class": "美食"
+        },
+        {
+            "cid": "15",
+            "icon": "&#xe60a;",
+            "class": "美食"
+        },
+        {
+            "cid": "16",
+            "icon": "&#xe60a;",
+            "class": "美食"
+        }
+
+    ],
+    "nav-content": {
+        "nav-carousel":
+             [
+                "/images/nav-carousel1.jpg",
+                "/images/nav-carousel2.jpg",
+                "/images/nav-carousel3.jpg",
+                "/images/nav-carousel4.jpg",
+                "/images/nav-carousel5.jpg"
+            ],
+        "nav-content-top2":  "/images/nav-content-top2.jpg",
+        "nav-content-bottom1": "/images/nav-content-bottom1.png",
+        "nav-content-bottom2": "/images/nav-content-bottom2.jpg",
+        "nav-content-bottom3": "/images/nav-content-bottom3.jpg"
+    }
+}
