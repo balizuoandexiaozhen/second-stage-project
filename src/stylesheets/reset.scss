@@ -55,3 +55,104 @@ input, button {
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  .header-bar {
+    height: 40px;
+    background: #F8F8F8;
+    .header-bar-center {
+        width: 1190px;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.header-bar-left {
+    .change-city {
+        margin: 0 4px;
+        border: 1px solid #E5E5E5;
+        border-radius: 2px;
+        padding: 0 2px;
+    }
+
+    .city-guess {
+        margin: 0 3px;
+    }
+
+    .login-in {
+        margin-left: 20px;
+        margin-right: 10px;
+        color:#31BBAC;
+    }
+}
+.header-bar-right {
+    .header-bar-list-active {
+        background: #fff;
+        border: 1px solid #E5E5E5;
+        border-bottom: 0;
+        box-sizing: border-box;
+        box-shadow: 0 -3px 5px 0 rgba(0,0,0,.1);
+    }
+    .header-bar-list-show {
+        position: absolute;
+        border: 1px solid #E5E5E5;
+
+        text-align: center;
+        box-shadow: 0 3px 5px 0 rgba(0,0,0,.1);
+        // display: none;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        li {
+            padding: 0;
+            height: 40px;
+            background: #fff;
+        }
+    }
+    .header-bar-list {
+        display: flex;
+        & > li {
+            padding: 0 14px;
+            position: relative;
+            height: 40px;
+            line-height: 40px;
+            box-sizing: border-box;
+        }
+        #mymeituan {
+            .mine-meituan {
+                // position: absolute;
+                top: 39px;
+                left: -1px;
+                right: -1px;
+                // border: 1px solid #E5E5E5;
+                border-top: 0;
+                // text-align: center;
+                // box-shadow: 0 3px 5px 0 rgba(0,0,0,.1);
+                // display: none;
+                // border-bottom-left-radius: 4px;
+                // border-bottom-right-radius: 4px;
+                // li {
+                //     padding: 0;
+                //     height: 40px;
+                //     background: #fff;
+                // }
+            }
+        }
+        #merchant-center {
+            .merchant-center {
+                width: 140%;
+                // top: 39px;
+                // left: -1px;
+                right: -1px;
+                // border-top: 0;
+                // display: none;
+                // li {
+                //     padding: 0 14px;
+                // }
+            }
+        }
+
+    }
+
+}
