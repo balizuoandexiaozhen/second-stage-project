@@ -431,5 +431,14 @@ section {
                 }
             }
         }
+        .favorable {
+            display: block;
+            width: 213px;
+            height: 270px;
+            padding: 10px;
+            float: left;
+            background-color: #fff;
+            transition: background-color .5s;
+        }
     }
 }

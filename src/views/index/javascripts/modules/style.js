@@ -6,3 +6,14 @@ $.ajax({
         console.log(res)
     }
 })
+
+$(".style-list").hover(function() {
+    $(this).animate({
+        background: rgba(0,0,0,0.7)
+    });
+}, function() {
+    $(this).animate({
+        background: rgba(0,0,0,0)
+    });
+})
+
