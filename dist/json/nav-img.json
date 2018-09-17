@@ -1,0 +1,14 @@
+{
+    "nav-carousel": [
+        "/images/nav-carousel1.jpg",
+        "/images/nav-carousel2.jpg",
+        "/images/nav-carousel3.jpg",
+        "/images/nav-carousel4.jpg",
+        "/images/nav-carousel5.jpg"
+    ],
+    "freelife": "/images/nav-content-top2.jpg",
+    "hotel": "/images/nav-content-bottom1.png",
+    "posture": "/images/nav-content-bottom2.jpg",
+    "merchant": "/images/nav-content-bottom3.jpg"
+
+}
