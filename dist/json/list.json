@@ -1,0 +1,620 @@
+{
+  "status": 0,
+  "data": {
+    "totalCounts": 1000,
+    "poiInfos": [
+      {
+        "poiId": 42081214,
+        "frontImg": "https://img.meituan.net/600.600/msmerchant/545872aa2ae0441c63951fe53b86602d2340688.jpg",
+        "title": "韩时烤肉（枫蓝国际购物中心店）",
+        "avgScore": 5,
+        "allCommentNum": 4299,
+        "address": "海淀区西直门北大街32号枫蓝国际购物中心2层",
+        "avgPrice": 69,
+        "dealList": [
+          {
+            "title": "100元代金券1张，全场通用",
+            "price": 92,
+            "soldCounts": 83923
+          },
+          { "title": "100元代金券1张，可叠加", "price": 68, "soldCounts": 818 }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 40732866,
+        "frontImg": "http://p1.meituan.net/600.600/mogu/3e8a81dac38add7cf729323c3232fdd440230.jpg",
+        "title": "秦门·陕西菜（房山店）",
+        "avgScore": 5,
+        "allCommentNum": 2418,
+        "address": "房山区长阳镇天星街1号院绿地缤纷城3层",
+        "avgPrice": 44,
+        "dealList": [
+          {
+            "title": "100元代金券1张，可叠加",
+            "price": 95,
+            "soldCounts": 58500
+          }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 346746,
+        "frontImg": "https://img.meituan.net/600.600/msmerchant/2a8f3f628f17a35d85a613812d1f4b761661798.jpg",
+        "title": "小牛海记潮汕牛肉店（牡丹园店）",
+        "avgScore": 5,
+        "allCommentNum": 7906,
+        "address": "海淀区花园路中城写字楼2层",
+        "avgPrice": 92,
+        "dealList": [
+          {
+            "title": "100元代金券1张，可叠加",
+            "price": 95,
+            "soldCounts": 52085
+          }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 4122290,
+        "frontImg": "https://img.meituan.net/600.600/msmerchant/4d572c74044624a05af25ef3e3fcdef5934234.jpg",
+        "title": "重八牛府（双榆树店）",
+        "avgScore": 5,
+        "allCommentNum": 4265,
+        "address": "海淀区双榆树东里15号北京一零一中学西门西行30米",
+        "avgPrice": 81,
+        "dealList": [
+          { "title": "100元代金券1张，可叠加", "price": 86, "soldCounts": 4787 }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 42465387,
+        "frontImg": "http://p0.meituan.net/600.600/ugcpic/d46238383b3a5318347b059288d18baa",
+        "title": "老北京前后涮羊肉（交大店）",
+        "avgScore": 4.7,
+        "allCommentNum": 3136,
+        "address": "海淀区交大东路94号（四川仁火锅隔壁）",
+        "avgPrice": 67,
+        "dealList": [
+          {
+            "title": "100元代金券1张，可叠加",
+            "price": 90,
+            "soldCounts": 29404
+          }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 295511,
+        "frontImg": "http://p1.meituan.net/600.600/shopmainpic/528ac739c03bd286fb169bca4173f2d71596491.jpg",
+        "title": "来相会饺子宴（甘家口店）",
+        "avgScore": 4.6,
+        "allCommentNum": 1782,
+        "address": "西城区百万庄大街41号华德商都B1楼（甘家口大厦路口东北角）",
+        "avgPrice": 50,
+        "dealList": [
+          {
+            "title": "100元代金券1张，可叠加",
+            "price": 89,
+            "soldCounts": 34566
+          }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 267080,
+        "frontImg": "http://p0.meituan.net/600.600/mogu/a084f5443f26ddc3db0383252bf602e1177293.jpg",
+        "title": "蜀国演义酒楼（黄寺旗舰店）",
+        "avgScore": 4.9,
+        "allCommentNum": 1508,
+        "address": "西城区黄寺大街23号北广福丽特大厦5楼（近福丽特商业街）",
+        "avgPrice": 89,
+        "dealList": [
+          {
+            "title": "100元代金券1张，可叠加",
+            "price": 85,
+            "soldCounts": 11121
+          }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 2498733,
+        "frontImg": "http://p1.meituan.net/600.600/mogu/93bb0d0e46bb9bc1e3bad2048f35aa4c48556.jpg",
+        "title": "姚记羊蝎子（回龙观店）",
+        "avgScore": 4.7,
+        "allCommentNum": 4694,
+        "address": "昌平区育知西路风雅园三区3号楼底商速8酒店楼下",
+        "avgPrice": 64,
+        "dealList": [
+          { "title": "100元代金券1张，可叠加", "price": 89, "soldCounts": 8891 }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 305918,
+        "frontImg": "https://img.meituan.net/600.600/msmerchant/894de1b6911f208d9e4fc254e0c078861382956.jpg",
+        "title": "紫光园（通州店）",
+        "avgScore": 4.5,
+        "allCommentNum": 5641,
+        "address": "通州区玉桥中路43号（鑫隆市场对面）",
+        "avgPrice": 59,
+        "dealList": [
+          {
+            "title": "100元代金券1张，可叠加",
+            "price": 92,
+            "soldCounts": 106245
+          }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 3292316,
+        "frontImg": "http://p1.meituan.net/600.600/deal/dd5fb74439b6601228cf0cb4d9275889323455.jpg",
+        "title": "山茶云南菜（中关村店）",
+        "avgScore": 4.7,
+        "allCommentNum": 582,
+        "address": "海淀区中关村保福寺78号(中科院计算机研究所对面)",
+        "avgPrice": 52,
+        "dealList": [
+          {
+            "title": "100元代金券1张，可叠加3张",
+            "price": 88,
+            "soldCounts": 2614
+          }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 6839214,
+        "frontImg": "http://p1.meituan.net/600.600/deal/703d5a61c24c7d21f0e3df23aeb0c58f112560.jpg",
+        "title": "阿田大虾（顺义店）",
+        "avgScore": 5,
+        "allCommentNum": 1294,
+        "address": "顺义区京汉餐饮街DS1-1108号（中国银行对面）",
+        "avgPrice": 59,
+        "dealList": [
+          { "title": "100元代金券1张，可叠加", "price": 90, "soldCounts": 4061 }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 278285,
+        "frontImg": "http://p0.meituan.net/600.600/deal/8325935bfa4528f9b82e3216e1190ed1201382.jpg",
+        "title": "小红蕃薯（中关村店）",
+        "avgScore": 4.8,
+        "allCommentNum": 548,
+        "address": "海淀区北四环西路68号左岸工社富驿时尚酒店2楼（近中关村图书大厦）",
+        "avgPrice": 65,
+        "dealList": [
+          { "title": "100元代金券1张，可叠加", "price": 91, "soldCounts": 6939 }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 5428418,
+        "frontImg": "http://p1.meituan.net/600.600/deal/c291d6f62ea566f7500c91fb650f845e43511.jpg",
+        "title": "京八珍（新华店）",
+        "avgScore": 4.3,
+        "allCommentNum": 1399,
+        "address": "通州区新华西街西门物美生活超市隔壁",
+        "avgPrice": 50,
+        "dealList": [
+          {
+            "title": "50元代金券1张，可叠加",
+            "price": 43.6,
+            "soldCounts": 171405
+          }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 1663196,
+        "frontImg": "http://p1.meituan.net/600.600/mogu/6fa43adac9c82beb32c15c7858a7b149115004.jpg",
+        "title": "红菜坊（牛栏山店）",
+        "avgScore": 4.4,
+        "allCommentNum": 4280,
+        "address": "顺义区昌金路牛山段7号（牛栏山镇第一社区党支部北）",
+        "avgPrice": 63,
+        "dealList": [
+          {
+            "title": "100元代金券1张，可叠加5张",
+            "price": 92,
+            "soldCounts": 19323
+          }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 40781266,
+        "frontImg": "https://img.meituan.net/600.600/msmerchant/c0422183b32527d7e5e7296a11922fb4136765.jpg",
+        "title": "杨家火锅（朝阳大悦城店）",
+        "avgScore": 4.5,
+        "allCommentNum": 2077,
+        "address": "朝阳区青年路与朝阳北路交口南100米佳亿青年汇4层",
+        "avgPrice": 91,
+        "dealList": [
+          {
+            "title": "100元代金券1张，可叠加",
+            "price": 95,
+            "soldCounts": 2744
+          },
+          { "title": "100元代金券1张，全场通用", "price": 50, "soldCounts": 89 }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 40998504,
+        "frontImg": "http://p0.meituan.net/600.600/mogu/9ab61da1176be9fc3bbba695423a3a09424154.jpg",
+        "title": "宽板凳老灶火锅（天竺店）",
+        "avgScore": 4.3,
+        "allCommentNum": 5534,
+        "address": "顺义区天北路府前一街4号（如家酒店楼下）",
+        "avgPrice": 90,
+        "dealList": [
+          {
+            "title": "100元代金券1张，可叠加",
+            "price": 89.9,
+            "soldCounts": 406382
+          }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 307966,
+        "frontImg": "http://p0.meituan.net/600.600/deal/c8cc7a1c865e0b65504c5cafda09020f48188.jpg",
+        "title": "金草帽炭火烤肉（望京店）",
+        "avgScore": 4.5,
+        "allCommentNum": 6839,
+        "address": "朝阳区广顺北大街望京西园四区423-424号楼2楼",
+        "avgPrice": 73,
+        "dealList": [
+          { "title": "100元代金券1张，可叠加", "price": 95, "soldCounts": 6859 }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 5177712,
+        "frontImg": "http://p0.meituan.net/600.600/deal/aae2d121a5799540738b5ff022d885d7131426.jpg",
+        "title": "巷心咖啡西餐厅",
+        "avgScore": 4.6,
+        "allCommentNum": 1974,
+        "address": "平谷区府前西街2-5号",
+        "avgPrice": 69,
+        "dealList": [
+          { "title": "100元代金券1张，可叠加", "price": 90, "soldCounts": 7400 }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 50298799,
+        "frontImg": "https://img.meituan.net/600.600/msmerchant/eb8517832c1e57582aa7ea45b0349e4b1389652.jpg",
+        "title": "伊爽串吧（城乡世纪广场店）",
+        "avgScore": 4.7,
+        "allCommentNum": 2731,
+        "address": "大兴区科创五街38号城乡世纪广场D座4层D408",
+        "avgPrice": 50,
+        "dealList": [
+          {
+            "title": "100元代金券1张，可叠加",
+            "price": 89,
+            "soldCounts": 6123
+          },
+          { "title": "100元代金券1张，可叠加", "price": 89, "soldCounts": 184 }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 264714,
+        "frontImg": "http://p1.meituan.net/600.600/mogu/c04e2a69d04ce48b9f34a3fa1327d5d741043.jpg",
+        "title": "九头鹰酒家（田村店）",
+        "avgScore": 4.3,
+        "allCommentNum": 562,
+        "address": "海淀区田村路43号（环京现代物流设施项目，京粮广场A座2F）",
+        "avgPrice": 58,
+        "dealList": [
+          {
+            "title": "100元代金券1张，可叠加",
+            "price": 95,
+            "soldCounts": 14017
+          }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 277316,
+        "frontImg": "http://p1.meituan.net/600.600/deal/201204/19/2_0419180946.jpg",
+        "title": "阳美江韩式火炉烤肉",
+        "avgScore": 4.4,
+        "allCommentNum": 2175,
+        "address": "朝阳区北三环樱花园西街8号（近和平西桥）",
+        "avgPrice": 82,
+        "dealList": [
+          { "title": "100元代金券1张，可叠加", "price": 90, "soldCounts": 4539 }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 264962,
+        "frontImg": "http://p1.meituan.net/600.600/shopmainpic/7130dbbb6a8678fa1cd08decfd492451327408.jpg",
+        "title": "金源福城肥牛火锅（远大路金源店）",
+        "avgScore": 4.3,
+        "allCommentNum": 12266,
+        "address": "海淀区远大路1号金源时代购物中心五层5-17号（公交站远大路东口站下）",
+        "avgPrice": 83,
+        "dealList": [
+          {
+            "title": "100元代金券1张，可叠加5张",
+            "price": 85,
+            "soldCounts": 41736
+          }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 311260,
+        "frontImg": "https://img.meituan.net/600.600/msmerchant/c5ac1353b831e8953fff8649ddbbdca0514838.jpg",
+        "title": "辣婆婆（世纪金源购物中心店）",
+        "avgScore": 4.1,
+        "allCommentNum": 2746,
+        "address": "海淀区远大路1号世纪金源购物中心5楼",
+        "avgPrice": 81,
+        "dealList": [
+          {
+            "title": "100元代金券1张，可叠加",
+            "price": 90,
+            "soldCounts": 39137
+          }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 42715139,
+        "frontImg": "http://p0.meituan.net/600.600/ugcpic/883c93c407a52ad3b902d320fd236454",
+        "title": "鱼美人烤鱼坊",
+        "avgScore": 4.5,
+        "allCommentNum": 1881,
+        "address": "密云区行宫街锦华酒店北侧小路（近檀西路，原万庆福祥）",
+        "avgPrice": 57,
+        "dealList": [
+          { "title": "100元代金券1张，可叠加", "price": 88, "soldCounts": 1333 }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 41603980,
+        "frontImg": "https://img.meituan.net/600.600/msmerchant/756e5b5e396fbd6c0dd7ea1da5d222af61152.jpg",
+        "title": "龙腾轩（沙河店）",
+        "avgScore": 3.9,
+        "allCommentNum": 1448,
+        "address": "昌平区沙河工业园区兰堡公寓西（沙河地铁站B1口）",
+        "avgPrice": 57,
+        "dealList": [
+          {
+            "title": "100元代金券1张，可叠加",
+            "price": 88,
+            "soldCounts": 31382
+          },
+          {
+            "title": "100元工作日午餐代金券1张",
+            "price": 50,
+            "soldCounts": 617
+          }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 2729323,
+        "frontImg": "http://p1.meituan.net/600.600/apiback/57198e6f68a08c7538074a59443fc318787542.jpg",
+        "title": "老诚一锅（良乡南关店）",
+        "avgScore": 4.3,
+        "allCommentNum": 7907,
+        "address": "房山区良乡拱辰南大街南关嘉瑞通小区4-4号（地铁房山线南关地铁站出口）",
+        "avgPrice": 65,
+        "dealList": [
+          {
+            "title": "200元代金券1张，可叠加",
+            "price": 180,
+            "soldCounts": 5230
+          },
+          {
+            "title": "100元代金券1张，可叠加",
+            "price": 90,
+            "soldCounts": 11039
+          },
+          {
+            "title": "300元代金券1张，可叠加",
+            "price": 270,
+            "soldCounts": 1631
+          }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 6853310,
+        "frontImg": "https://img.meituan.net/600.600/msmerchant/fe02322bebcd7d6d93b3e428afeae869184304.jpg",
+        "title": "王家渡火锅店（悦荟万科广场店）",
+        "avgScore": 4.3,
+        "allCommentNum": 1953,
+        "address": "昌平区南环路10号院1号楼悦荟万科广场7层",
+        "avgPrice": 100,
+        "dealList": [
+          {
+            "title": "100元代金券1张，可叠加",
+            "price": 95,
+            "soldCounts": 24967
+          },
+          { "title": "100元代金券1张，全场通用", "price": 75, "soldCounts": 32 }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 287796,
+        "frontImg": "http://p0.meituan.net/600.600/mogu/2114974100a60493d71a2d6e4f8909c094942.jpg",
+        "title": "串来串去（中关村店）",
+        "avgScore": 3.9,
+        "allCommentNum": 2073,
+        "address": "海淀区中关村大街49号（人大东门人大附中间）",
+        "avgPrice": 67,
+        "dealList": [
+          {
+            "title": "100元代金券1张，可叠加",
+            "price": 95,
+            "soldCounts": 10480
+          },
+          {
+            "title": "200元代金券1张，可叠加",
+            "price": 190,
+            "soldCounts": 12904
+          },
+          {
+            "title": "100元代金券1张，可叠加2张",
+            "price": 75,
+            "soldCounts": 81
+          }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 1648866,
+        "frontImg": "http://p1.meituan.net/600.600/mogu/df5ba10b139bfc0866a2e8fc98d39fb440405.jpg",
+        "title": "健将一品（新街口店）",
+        "avgScore": 3.8,
+        "allCommentNum": 642,
+        "address": "西城区西直门内大街2-4号",
+        "avgPrice": 29,
+        "dealList": [
+          {
+            "title": "50元代金券1张，可叠加",
+            "price": 45,
+            "soldCounts": 23184
+          },
+          { "title": "30元代金券1张，可叠加", "price": 27, "soldCounts": 21611 }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 5341836,
+        "frontImg": "http://p1.meituan.net/600.600/deal/7d1816cc3f094cd92e0bbd55bb3fc9b164758.jpg",
+        "title": "龙继斑鱼庄",
+        "avgScore": 4.3,
+        "allCommentNum": 751,
+        "address": "密云区西大桥路26-6号（招商大厦对面，迪曼龙东侧隔壁）",
+        "avgPrice": 84,
+        "dealList": [
+          { "title": "100元代金券1张，可叠加", "price": 85, "soldCounts": 2319 }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 5532905,
+        "frontImg": "http://p0.meituan.net/600.600/mogu/48cac1b48b44f0d5bf09d4630e73c487306017.jpg",
+        "title": "勒是雾都 · 重庆火锅（长楹天街店）",
+        "avgScore": 3.4,
+        "allCommentNum": 1401,
+        "address": "朝阳区朝阳北路常营龙湖长楹天街星座六栋三楼（屈臣氏旁）",
+        "avgPrice": 89,
+        "dealList": [
+          {
+            "title": "100元代金券1张，可叠加",
+            "price": 86,
+            "soldCounts": 20298
+          }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      },
+      {
+        "poiId": 542251,
+        "frontImg": "http://p0.meituan.net/600.600/deal/__25695780__3392736.jpg",
+        "title": "鸭王烤鸭店（三里河店）",
+        "avgScore": 4.4,
+        "allCommentNum": 6065,
+        "address": "西城区三里河东路5号中商大厦B1楼",
+        "avgPrice": 93,
+        "dealList": [
+          {
+            "title": "100元代金券1张，可叠加",
+            "price": 95,
+            "soldCounts": 5586
+          },
+          {
+            "title": "500元代金券1张，可叠加",
+            "price": 460,
+            "soldCounts": 933
+          },
+          {
+            "title": "200元代金券1张，可叠加",
+            "price": 190,
+            "soldCounts": 2423
+          }
+        ],
+        "hasAds": false,
+        "adsClickUrl": "",
+        "adsShowUrl": ""
+      }
+    ]
+  }
+}
