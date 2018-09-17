@@ -6,3 +6,4 @@
 // import 'jquery'
 require('./modules/header')
 require('./modules/banner')
+require('../../../js/common')

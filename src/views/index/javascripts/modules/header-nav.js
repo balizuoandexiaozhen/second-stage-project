@@ -1,3 +1,3 @@
-$("#city-guess").mouseenter(function() {
-    this.css({"color": "#31BBAC"});
-})
+// $("#city-guess").mouseenter(function() {
+//     this.css({"color": "#31BBAC"});
+// })

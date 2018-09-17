@@ -97,24 +97,29 @@ input, button {
     }
     .header-bar-list-show {
         position: absolute;
+        // z-index: 999;
         border: 1px solid #E5E5E5;
-
         text-align: center;
         box-shadow: 0 3px 5px 0 rgba(0,0,0,.1);
         // display: none;
+        right: -1px;
+        z-index: 1000;
+        top: 95%;
         border-bottom-left-radius: 4px;
         border-bottom-right-radius: 4px;
-        li {
-            padding: 0;
-            height: 40px;
-            background: #fff;
-        }
+        background-color: #fff;
+        // li {
+        //     // padding: 0;
+        //     // height: 40px;
+        //     background: #fff;
+        // }
     }
     .header-bar-list {
         display: flex;
         & > li {
             padding: 0 14px;
             position: relative;
+            // z-index: 100000;
             height: 40px;
             line-height: 40px;
             box-sizing: border-box;
@@ -122,21 +127,21 @@ input, button {
         #mymeituan {
             .mine-meituan {
                 // position: absolute;
-                top: 39px;
+                // top: 39px;
                 left: -1px;
-                right: -1px;
+                // right: -1px;
                 // border: 1px solid #E5E5E5;
                 border-top: 0;
                 // text-align: center;
                 // box-shadow: 0 3px 5px 0 rgba(0,0,0,.1);
-                // display: none;
+                display: none;
                 // border-bottom-left-radius: 4px;
                 // border-bottom-right-radius: 4px;
-                // li {
-                //     padding: 0;
-                //     height: 40px;
-                //     background: #fff;
-                // }
+                li {
+                    // padding: 0;
+                    height: 40px;
+                    // background: #fff;
+                }
             }
         }
         #merchant-center {
@@ -144,15 +149,167 @@ input, button {
                 width: 140%;
                 // top: 39px;
                 // left: -1px;
-                right: -1px;
-                // border-top: 0;
-                // display: none;
-                // li {
-                //     padding: 0 14px;
-                // }
+                // right: -1px;
+                border-top: 0;
+                display: none;
+                li {
+                    // padding: 0 14px;
+                    height: 40px;
+                }
             }
         }
 
+        #site-navigation {
+            .site-navigation {
+                display: flex;
+                justify-content: space-around;
+                width: 1200px;
+                padding: 30px 36px 36px 36px;
+                box-sizing: border-box;
+                border-top-left-radius: 4px;
+                // top: 95%;;
+                // // left: -1px;
+                // right: -1px;
+                border-top: 0;
+                display: none;
+                h3 {
+                    color: #31BBAC;
+                    font-size: 14px;
+                    margin-bottom: 25px;
+                    // text-align: center;
+                }
+                .site-navigation-left {
+                    display: flex;
+                    .site-navigation-left-titel {
+                        padding-right: 40px;
+                        // h3 {
+                        //     color: #31BBAC;
+                        // }
+                        .hotel-tourismm-content {
+                            display: flex;
+                            .hotel-tourismm-list {
+                                // padding: 0 5px;
+                                li {
+                                    height: 30px;
+                                    padding: 0px 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .site-navigation-right {
+                    flex: 1;
+                    .site-navigation-right-app {
+                        display: flex;
+                        justify-content: space-around;
+                        img {
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+header {
+    // color: #999;
+    .header-bigcenter {
+        padding: 28px 0 18px 0;
+        width: 1190px;
+        margin: 0 auto;
+    }
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        .header-logo img{
+            width: 126px;
+            height: 46px;
+        }
+    }
+    .header-center {
+        .header-search {
+            width: 550px;
+            height: 40px;
+            border: 1px solid #13D1BE;
+            border-radius: 4px;
+            display: flex;
+            .header-search-txt {
+                width: 84%;
+                border: 0;
+                padding: 10px;
+                box-sizing: border-box;
+                border-radius: 4px 0 4px 4px;
+            }
+
+            .header-search-btn {
+                flex: 1;
+                // width: 15%;
+                height: 100%;
+                border: 0;
+                box-sizing: border-box;
+                height: 100%;
+                background: #13D1BE;
+                border-radius: 0 4px 4px 0;
+                font-size: 16px;
+                font-weight: bolder;
+                line-height: 100%;
+                color: #fff;
+                cursor: pointer;
+            }
+
+        }
+        .header-center-list {
+            padding: 8px 0 0 12px;
+            ul {
+                display: flex;
+                li {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .header-right {
+        .header-right-list {
+            display: flex;
+            justify-content: space-between;
+            width: 186px;
+            // color: #13D1BE;
+            li {
+                .header-right-tui {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .iconfont {
+                        color: #13D1BE;
+                        font-size: 25px;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    .header-bottom {
+        // padding-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        ul{
+           display: flex;
+           margin-top: 34px;
+           li {
+               margin: 0 18px;
+           }
+        }
+        a {
+            color: #000;
+        }
     }
 
 }
