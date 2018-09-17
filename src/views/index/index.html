@@ -14,7 +14,7 @@
         <div class="header-bar-center">
                 <div class="header-bar-left">
                     <span class="curent-city">
-                        <svg class="icon" aria-hidden="true">
+                        <svg class="icon " aria-hidden="true">
                             <use xlink:href="#icon-location"></use>
                         </svg>
                         <span id="local-city">北京</span>
@@ -22,7 +22,7 @@
                     <a href="http://www.meituan.com/changecity/" class="change-city">切换城市</a>
                     <span>
                         <span>[</span>
-                        <span id="local-city">
+                        <span class="local-city">
                             <a href="" class="city-guess">大厂回族自治县</a>
                             <a href="" class="city-guess">廊坊</a>
                             <a href="" class="city-guess">固安县</a>
@@ -34,7 +34,8 @@
                 </div>
                 <div class="header-bar-right">
                     <ul class="header-bar-list">
-                        <li id="mymeituan"><a href="">我的美团</a>
+                        <li id="mymeituan" class="haschild">
+                            <a href="">我的美团</a>
                             <ul class="mine-meituan header-bar-list-show">
                                 <li><a href="">我的订单</a></li>
                                 <li><a href="">我的收藏</a></li>
@@ -42,8 +43,9 @@
                                 <li><a href="">账户设置</a></li>
                             </ul>
                         </li>
-                        <li><a href="">手机APP</a></li>
-                        <li id="merchant-center" ><a href="">商家中心</a>
+                        <li><a href="" class="app">手机APP</a></li>
+                        <li id="merchant-center" class="haschild">
+                            <a href="">商家中心</a>
                             <ul class="header-bar-list-show merchant-center">
                                 <li><a href="">登录商家中心</a></li>
                                 <li><a href="">美团智能收银</a></li>
@@ -53,8 +55,9 @@
                                 <li><a href="">商家申请开票</a></li>
                             </ul>
                         </li>
-                        <li id="site-navigation" class="header-bar-list-active"><a href="">网站导航</a>
-                            <div class="site-navigation header-bar-list-show">
+                        <li id="site-navigation" class="haschild">
+                            <a href="">网站导航</a>
+                            <div class="header-bar-list-show site-navigation">
                                 <div class="site-navigation-left">
                                     <div class="site-navigation-left-titel">
                                         <h3>酒店旅游</h3>
@@ -95,9 +98,6 @@
                                             <ul class="hotel-tourismm-list">
                                                 <li><a href="">国际机票</a></li>
                                                 <li><a href="">经济型酒店</a></li>
-                                                <li><a href=""></a></li>
-                                                <li><a href=""></a></li>
-                                                <li><a href=""></a></li>
                                             </ul>
                                           
                                         </div>
@@ -108,23 +108,14 @@
                                             <ul class="hotel-tourismm-list">
                                                 <li><a href="">国际机票</a></li>
                                                 <li><a href="">经济型酒店</a></li>
-                                                <li><a href=""></a></li>
-                                                <li><a href=""></a></li>
-                                                <li><a href=""></a></li>
                                             </ul>
                                             <ul class="hotel-tourismm-list">
                                                 <li><a href="">国际机票</a></li>
                                                 <li><a href="">经济型酒店</a></li>
-                                                <li><a href=""></a></li>
-                                                <li><a href=""></a></li>
-                                                <li><a href=""></a></li>
                                             </ul>
                                             <ul class="hotel-tourismm-list">
                                                 <li><a href="">国际机票</a></li>
                                                 <li><a href="">经济型酒店</a></li>
-                                                <li><a href=""></a></li>
-                                                <li><a href=""></a></li>
-                                                <li><a href=""></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -155,16 +146,16 @@
                     <div class="header-search">
                         <input type="text" class="header-search-txt" placeholder="搜索商家或地点"">
                         <button class="header-search-btn"><span><i class="iconfont">&#xe60f;</i></span></button>
+                        <div class="header-search-hide">
+                            <h3>热门搜索</h3>
+                            <p>
+                                <!-- <span>热门搜索</span><span>热门搜索</span> -->
+                            </p>
+                        </div>
                     </div>
                     <div class="header-center-list">
                         <ul>
-                            <li><a href="">故宫博物院</a></li>
-                            <li><a href="">北京欢乐谷</a></li>
-                            <li><a href="">北京欢乐谷</a></li>
-                            <li><a href="">北京欢乐谷</a></li>
-                            <li><a href="">北京欢乐谷</a></li>
-                            <li><a href="">北京欢乐谷</a></li>
-                            <li><a href="">北京欢乐谷</a></li>
+                            <!-- <li><a href="">故宫博物院</a></li>-->
                         </ul>
                     </div>
                 </div>
@@ -204,7 +195,13 @@
                         全部分类
                     </p>
                     <ul>
-                        <li><span class="nav-li-font"><i class="iconfont nav-icon">&#xe60a;</i>美食</span><span>></span></li>
+                        <li>
+                            <span class="nav-li-font">
+                                <i class="iconfont nav-icon">&#xe60a;</i>
+                                <a href="">美食</a>    
+                            </span>
+                            <span>></span>
+                        </li>
                         <li><span class="nav-li-font"><i class="iconfont nav-icon">&#xe60a;</i>美食</span><span>></span></li>
                         <li><span class="nav-li-font"><i class="iconfont nav-icon">&#xe60a;</i>美食</span><span>></span></li>
                         <li><span class="nav-li-font"><i class="iconfont nav-icon">&#xe60a;</i>美食</span><span>></span></li>

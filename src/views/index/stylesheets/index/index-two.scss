@@ -205,7 +205,12 @@ section {
                         justify-content: space-between;
                         align-items: center;
                         .nav-icon {
-                            margin-right: 10px;
+                            margin-right: 5px;
+                            opacity: .3;
+                            font-size: 14px;
+                        }
+                        a {
+                            color: #fff;
                         }
                         // .nav-li-font {
                         //     float: left;
