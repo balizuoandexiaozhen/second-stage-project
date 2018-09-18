@@ -67,9 +67,10 @@ $.ajax({
     }
 });
 
-// $li = $(this).find("li");
+// $li = $("header-bottom").find("li");
 // $li.hover(function() {
-//     $(this).animate({"color": "rgb()251, 199, 0"})
+//     console.log(000)
+//     $(this).css({"color": "rgb()251, 199, 0"})
 // },function() {
-//     $(this).animate({"color": "#000"});
+//     $(this).css({"color": "#000"});
 // })

@@ -16,15 +16,19 @@ header {
     border-bottom: 2px solid #2bb8aa;
     min-width: 980px;
     color: #666;
+
     .heder-center {
         margin: 0 auto;
         padding: 10px 0;
-        width: 980;
-        img {
+        width: 980px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
             width: 54px;
             height: 36px;
-            // background-position: -669px -748px;
-            // background-image: url()
+            background-position: -669px -748px;
+            background-image: url(/images/background-position.png);
         }
     }
 }

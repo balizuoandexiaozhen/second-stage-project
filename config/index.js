@@ -15,7 +15,7 @@ const config = {
         port: 8000,
         livereload: true 
     },
-    pages: [ 'index', 'list', 'car' ],
+    pages: [ 'index', 'list', 'login'],
     cssoptions: {// css配置
         'index': { // index页面的css
             'common': [ //index页面处理之后的common.min.css需要合并的文件
