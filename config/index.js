@@ -30,6 +30,11 @@ const config = {
                 './src/stylesheets/reset.scss',
                 './src/views/list/*/*.scss'
             ]
+        },
+        'login': {
+            'login': [
+                './src/views/login/css/*.scss'
+            ]
         }
     },
     jsoptions: {// js配置
@@ -37,7 +42,8 @@ const config = {
             index: './src/views/index/javascripts/index.js',
             vendor: './src/views/index/javascripts/vendor.js'
         },
-        'list': './src/views/list/javascripts/list.js'
+        'list': './src/views/list/javascripts/list.js',
+        'login': './src/views/login/js/login.js'
     }
 } 
 

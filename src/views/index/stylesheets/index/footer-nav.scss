@@ -1,8 +1,17 @@
 .footer-nav {
-    padding: 40px 45px;
+    margin-top: 40px;
+    padding: 20px 45px 40px 45px;
     border-top: 1px solid #E5E5E5;
     border-bottom: 1px solid #E5E5E5;  
     display: flex;
+    justify-content: space-between;
+    p {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    li {
+        margin: 8px 0;
+    }
     // .list1 {
 
     // }

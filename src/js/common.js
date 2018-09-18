@@ -66,3 +66,10 @@ $.ajax({
         })
     }
 });
+
+// $li = $(this).find("li");
+// $li.hover(function() {
+//     $(this).animate({"color": "rgb()251, 199, 0"})
+// },function() {
+//     $(this).animate({"color": "#000"});
+// })
