@@ -1,0 +1,27 @@
+.homestay {
+    .style-top {
+        justify-content: space-between;
+        background: linear-gradient(to right, rgb(243, 182, 74) 2%, rgb(242, 197, 69) 97%) rgb(243, 182, 74);
+    }
+    .style-content {
+        .style-list {
+            position: relative;
+            .style-list-price {
+                color: #F60;
+            }
+            .small-img {
+                border: 2px solid #FFF;
+                height: 48px; 
+                width: 48px;
+                position: absolute;
+                bottom: 80px;
+                right: 15px;
+                z-index: 9;
+                border-radius: 40px;
+                background-size: 100%;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

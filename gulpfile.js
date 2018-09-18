@@ -141,7 +141,7 @@ gulp.task('inject', function () {
             var target = gulp.src('./dist/'+page+'/'+page+'.html');
             // It's not necessary to read the files (will speed up things), we're only after their paths:
             var sources = gulp.src(['./dist/'+page+'/js/*.js', './dist/'+page+'/css/*.css'], {read: false});
-           
+            
             target.pipe(inject(sources, { ignorePath: '/dist' }))
               .pipe(gulp.dest('./dist/'+page+''));
         })

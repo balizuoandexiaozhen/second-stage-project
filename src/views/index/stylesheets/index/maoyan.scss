@@ -1,0 +1,127 @@
+.maoyanmovie {
+    overflow: hidden;
+        .style-top {
+            background: linear-gradient(to right, rgb(250, 60, 104) 2%, rgb(254, 70, 77) 97%) rgb(250, 60, 104);
+            justify-content: space-between;
+            // .all {
+            //     margin-right: 20px;
+            //     color: #fff;
+            //     font-size: 14px;
+            // }
+            // div {
+            //     display: flex;
+            //     align-items: center;
+            // }
+        }
+        .style-content {
+            width: 10000000px;
+            justify-content: flex-start;
+            flex-flow: nowrap;
+            .maoyan-list {
+                margin: 0 10px;
+                flex-shrink: 0;
+                width: 215px;
+                position: relative;
+                img {
+                    width: 100%;
+                    border-radius: 4px;
+                }
+                .film-info {
+                    height: 50px;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    .film-score {
+                        font-size: 12px;
+                        color: #fff;
+                        text-align: left;
+                        span {
+                            font-size: 16px;
+                            color: #FD9827;
+                            font-weight: 500;
+                        }
+
+                    }
+                    .film-name {
+                        text-align: left;
+                        color: #fff;
+                        padding-left: 10px;
+                        font-size: 16px;
+                        white-space: nowrap;
+                        // width: 6em;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-weight: 500;
+                    }
+                    .buy-ticket {
+                        background: #FF4949;
+                        border-radius: 100px;
+                        color: #fff;
+                        padding: 2px 12px 3px;
+                        font-size: 14px;
+                        position: relative;
+                        top: -24px;
+                        cursor: pointer;
+                        line-height: 20px;
+                        text-align: center;
+                        float: right;
+                        right: 10px;
+                    }
+                }
+            }
+        }
+        //     .style-list {
+        //         width: 213px;
+        //         height: 260px;
+        //         img {
+        //             width: 100%;
+        //             // max-width: 100%;
+        //             height: 120px;
+        //             border-radius: 4px;
+    
+        //         }
+        //         .style-list-title {
+        //             font-size: 16px;
+        //             color: #222;
+        //             height: 22px;
+        //             line-height: 22px;
+        //             margin: 8px 0;
+        //             font-weight: bold;
+        //             width: 100%;
+        //             white-space: nowrap;
+        //             overflow: hidden;
+        //             text-overflow: ellipsis;
+        //         }
+        //        .favorable-txt {
+        //            margin-bottom: 35px;
+        //            width: 100%;
+        //            white-space: nowrap;
+        //            overflow: hidden;
+        //            text-overflow: ellipsis;
+        //        }
+        //         .style-list-price {
+        //             height: 22px;
+        //             line-height: 22px;
+        //             font-size: 14px;
+        //             color: #F60;
+        //             .number {
+        //                 font-size: 22px;
+        //                 color: #F60;
+        //                 margin-right: 6px;
+        //                 letter-spacing: -.8px;
+        //             }
+        //             .underline {
+        //                 font-size: 12px;
+        //                 color: #999;
+        //                 text-decoration: line-through;
+        //             }
+        //             .sold {
+        //                 float: right;
+        //                 color: #999;
+        //                 margin-top: 3px;
+        //             }
+        //         }
+        //     }
+        // }
+    
+}

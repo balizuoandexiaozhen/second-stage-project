@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,133 +10,134 @@
     <!-- endinject -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
+
 <body>
     <div class="header-bar">
         <div class="header-bar-center">
-                <div class="header-bar-left">
-                    <span class="curent-city">
-                        <svg class="icon " aria-hidden="true">
-                            <use xlink:href="#icon-location"></use>
-                        </svg>
-                        <span id="local-city">北京</span>
+            <div class="header-bar-left">
+                <span class="curent-city">
+                    <svg class="icon " aria-hidden="true">
+                        <use xlink:href="#icon-location"></use>
+                    </svg>
+                    <span id="local-city">北京</span>
+                </span>
+                <a href="http://www.meituan.com/changecity/" class="change-city">切换城市</a>
+                <span>
+                    <span>[</span>
+                    <span class="local-city">
+                        <a href="" class="city-guess">大厂回族自治县</a>
+                        <a href="" class="city-guess">廊坊</a>
+                        <a href="" class="city-guess">固安县</a>
                     </span>
-                    <a href="http://www.meituan.com/changecity/" class="change-city">切换城市</a>
-                    <span>
-                        <span>[</span>
-                        <span class="local-city">
-                            <a href="" class="city-guess">大厂回族自治县</a>
-                            <a href="" class="city-guess">廊坊</a>
-                            <a href="" class="city-guess">固安县</a>
-                        </span>
-                        <span>]</span>
-                    </span>
-                    <a href="" class="login-in">立即登录</a>
-                    <a href="" class="login-out">注册</a>
-                </div>
-                <div class="header-bar-right">
-                    <ul class="header-bar-list">
-                        <li id="mymeituan" class="haschild">
-                            <a href="">我的美团</a>
-                            <ul class="mine-meituan header-bar-list-show">
-                                <li><a href="">我的订单</a></li>
-                                <li><a href="">我的收藏</a></li>
-                                <li><a href="">抵用券</a></li>
-                                <li><a href="">账户设置</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="" class="app">手机APP</a></li>
-                        <li id="merchant-center" class="haschild">
-                            <a href="">商家中心</a>
-                            <ul class="header-bar-list-show merchant-center">
-                                <li><a href="">登录商家中心</a></li>
-                                <li><a href="">美团智能收银</a></li>
-                                <li><a href="">我想合作</a></li>
-                                <li><a href=""></a>手机免费开店</a></li>
-                                <li><a href="">餐饮代理商招募</a></li>
-                                <li><a href="">商家申请开票</a></li>
-                            </ul>
-                        </li>
-                        <li id="site-navigation" class="haschild">
-                            <a href="">网站导航</a>
-                            <div class="header-bar-list-show site-navigation">
-                                <div class="site-navigation-left">
-                                    <div class="site-navigation-left-titel">
-                                        <h3>酒店旅游</h3>
-                                        <div class="hotel-tourismm-content">
-                                            <ul class="hotel-tourismm-list">
-                                                <li><a href="">国际机票</a></li>
-                                                <li><a href="">经济型酒店</a></li>
-                                                <li><a href="">公寓</a></li>
-                                                <li><a href="">青年旅舍</a></li>
-                                                <li><a href=""></a></li>
-                                            </ul>
-                                            <ul class="hotel-tourismm-list">
-                                                <li><a href="">国际机票</a></li>
-                                                <li><a href="">经济型酒店</a></li>
-                                                <li><a href=""></a></li>
-                                                <li><a href=""></a></li>
-                                                <li><a href=""></a></li>
-                                            </ul>
-                                            <ul class="hotel-tourismm-list">
-                                                <li><a href="">国际机票</a></li>
-                                                <li><a href="">经济型酒店</a></li>
-                                                <li><a href=""></a></li>
-                                                <li><a href=""></a></li>
-                                                <li><a href=""></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="site-navigation-left-titel">
-                                        <h3>看电影</h3>
-                                        <div class="hotel-tourismm-content">
-                                            <ul class="hotel-tourismm-list">
-                                                <li><a href="">国际机票</a></li>
-                                                <li><a href="">经济型酒店</a></li>
-                                                <li><a href=""></a></li>
-                                                <li><a href=""></a></li>
-                                                <li><a href=""></a></li>
-                                            </ul>
-                                            <ul class="hotel-tourismm-list">
-                                                <li><a href="">国际机票</a></li>
-                                                <li><a href="">经济型酒店</a></li>
-                                            </ul>
-                                          
-                                        </div>
-                                    </div>
-                                    <div class="site-navigation-left-titel">
-                                        <h3>吃美食</h3>
-                                        <div class="hotel-tourismm-content">
-                                            <ul class="hotel-tourismm-list">
-                                                <li><a href="">国际机票</a></li>
-                                                <li><a href="">经济型酒店</a></li>
-                                            </ul>
-                                            <ul class="hotel-tourismm-list">
-                                                <li><a href="">国际机票</a></li>
-                                                <li><a href="">经济型酒店</a></li>
-                                            </ul>
-                                            <ul class="hotel-tourismm-list">
-                                                <li><a href="">国际机票</a></li>
-                                                <li><a href="">经济型酒店</a></li>
-                                            </ul>
-                                        </div>
+                    <span>]</span>
+                </span>
+                <a href="" class="login-in">立即登录</a>
+                <a href="" class="login-out">注册</a>
+            </div>
+            <div class="header-bar-right">
+                <ul class="header-bar-list">
+                    <li id="mymeituan" class="haschild">
+                        <a href="">我的美团</a>
+                        <ul class="mine-meituan header-bar-list-show">
+                            <li><a href="">我的订单</a></li>
+                            <li><a href="">我的收藏</a></li>
+                            <li><a href="">抵用券</a></li>
+                            <li><a href="">账户设置</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="app">手机APP</a></li>
+                    <li id="merchant-center" class="haschild">
+                        <a href="">商家中心</a>
+                        <ul class="header-bar-list-show merchant-center">
+                            <li><a href="">登录商家中心</a></li>
+                            <li><a href="">美团智能收银</a></li>
+                            <li><a href="">我想合作</a></li>
+                            <li><a href=""></a>手机免费开店</a></li>
+                            <li><a href="">餐饮代理商招募</a></li>
+                            <li><a href="">商家申请开票</a></li>
+                        </ul>
+                    </li>
+                    <li id="site-navigation" class="haschild">
+                        <a href="">网站导航</a>
+                        <div class="header-bar-list-show site-navigation">
+                            <div class="site-navigation-left">
+                                <div class="site-navigation-left-titel">
+                                    <h3>酒店旅游</h3>
+                                    <div class="hotel-tourismm-content">
+                                        <ul class="hotel-tourismm-list">
+                                            <li><a href="">国际机票</a></li>
+                                            <li><a href="">经济型酒店</a></li>
+                                            <li><a href="">公寓</a></li>
+                                            <li><a href="">青年旅舍</a></li>
+                                            <li><a href=""></a></li>
+                                        </ul>
+                                        <ul class="hotel-tourismm-list">
+                                            <li><a href="">国际机票</a></li>
+                                            <li><a href="">经济型酒店</a></li>
+                                            <li><a href=""></a></li>
+                                            <li><a href=""></a></li>
+                                            <li><a href=""></a></li>
+                                        </ul>
+                                        <ul class="hotel-tourismm-list">
+                                            <li><a href="">国际机票</a></li>
+                                            <li><a href="">经济型酒店</a></li>
+                                            <li><a href=""></a></li>
+                                            <li><a href=""></a></li>
+                                            <li><a href=""></a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="site-navigation-right">
-                                    <h3>手机应用</h3>
-                                    <div class="site-navigation-right-app">
-                                        <a href=""><img src="/images/meituan.png" alt=""></a>
-                                        <a href=""><img src="/images/meituan.png" alt=""></a>
-                                        <a href=""><img src="/images/meituan.png" alt=""></a>
-                                        <a href=""><img src="/images/meituan.png" alt=""></a>
-                                        <a href=""><img src="/images/meituan.png" alt=""></a>
+                                <div class="site-navigation-left-titel">
+                                    <h3>看电影</h3>
+                                    <div class="hotel-tourismm-content">
+                                        <ul class="hotel-tourismm-list">
+                                            <li><a href="">国际机票</a></li>
+                                            <li><a href="">经济型酒店</a></li>
+                                            <li><a href=""></a></li>
+                                            <li><a href=""></a></li>
+                                            <li><a href=""></a></li>
+                                        </ul>
+                                        <ul class="hotel-tourismm-list">
+                                            <li><a href="">国际机票</a></li>
+                                            <li><a href="">经济型酒店</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="site-navigation-left-titel">
+                                    <h3>吃美食</h3>
+                                    <div class="hotel-tourismm-content">
+                                        <ul class="hotel-tourismm-list">
+                                            <li><a href="">国际机票</a></li>
+                                            <li><a href="">经济型酒店</a></li>
+                                        </ul>
+                                        <ul class="hotel-tourismm-list">
+                                            <li><a href="">国际机票</a></li>
+                                            <li><a href="">经济型酒店</a></li>
+                                        </ul>
+                                        <ul class="hotel-tourismm-list">
+                                            <li><a href="">国际机票</a></li>
+                                            <li><a href="">经济型酒店</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
-                </div>
+                            <div class="site-navigation-right">
+                                <h3>手机应用</h3>
+                                <div class="site-navigation-right-app">
+                                    <a href=""><img src="/images/meituan.png" alt=""></a>
+                                    <a href=""><img src="/images/meituan.png" alt=""></a>
+                                    <a href=""><img src="/images/meituan.png" alt=""></a>
+                                    <a href=""><img src="/images/meituan.png" alt=""></a>
+                                    <a href=""><img src="/images/meituan.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
+    </div>
     <header>
         <div class="header-bigcenter">
             <div class="header-top">
@@ -145,7 +147,8 @@
                 <div class="header-center">
                     <div class="header-search">
                         <input type="text" class="header-search-txt" placeholder="搜索商家或地点"">
-                        <button class="header-search-btn"><span><i class="iconfont">&#xe60f;</i></span></button>
+                        <button class="
+                            header-search-btn"><span><i class="iconfont">&#xe60f;</i></span></button>
                         <div class="header-search-hide">
                             <h3>热门搜索</h3>
                             <p>
@@ -175,14 +178,14 @@
             </div>
             <div class="header-bottom">
                 <!-- <div class="header-bottom-list"> -->
-                    <ul>
-                        <li><a href="">美团外卖</a></li>
-                        <li><a href="">猫眼电影</a></li>
-                        <li><a href="">美团酒店</a></li>
-                        <li><a href="">民俗/公寓</a></li>
-                        <li><a href="">商家入驻</a></li>
-                        <li><a href="">美团公益</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="">美团外卖</a></li>
+                    <li><a href="">猫眼电影</a></li>
+                    <li><a href="">美团酒店</a></li>
+                    <li><a href="">民俗/公寓</a></li>
+                    <li><a href="">商家入驻</a></li>
+                    <li><a href="">美团公益</a></li>
+                </ul>
                 <!-- </div> -->
             </div>
         </div>
@@ -229,7 +232,7 @@
                             </ul>
                         </div>
                         <div class="nav-content-top2">
-                           
+
                         </div>
                         <div class="nav-login">
                             <img src="/images/avatar.jpg" alt="">
@@ -240,13 +243,13 @@
                     </div>
                     <div class="nav-content-bottom">
                         <div class="nav-content-bottom1">
-                            
+
                         </div>
                         <div class="nav-content-bottom2">
-                            
+
                         </div>
                         <div class="nav-content-bottom3">
-                            
+
                         </div>
                         <div class="nav-qr-code">
                             <img src="/images/qr.png" alt="">
@@ -268,46 +271,94 @@
                     </ul>
                 </div>
                 <div class="style-content">
+                    <a href="">
                         <div class="style-list">
                             <img src="/images/nav-carousel1.jpg" alt="">
                             <p class="style-list-title">正义路酒店</p>
-                            <div class="style-list-tag"><p>新春超值优惠标签</p><p>酒店套餐</p><p>连住优惠</p><p>早订多减</p></div>
-                            <div class="style-list-price">￥638<span>/起</span></div>
+                            <div class="style-list-tag">
+                                <p>新春超值优惠标签</p>
+                                <p>酒店套餐</p>
+                                <p>连住优惠</p>
+                                <p>早订多减</p>
+                            </div>
+                            <div class="style-list-price">
+                                ￥<span class="number">638</span>/起
+                                <!-- <span class="underline">美团价￥22</span> -->
+                            </div>
                         </div>
+                    </a>
+                    <a href="">
                         <div class="style-list">
                             <img src="/images/nav-carousel1.jpg" alt="">
                             <p class="style-list-title">正义路酒店</p>
-                            <div class="style-list-tag"><p>新春超值优惠标签</p><p>酒店套餐</p><p>连住优惠</p><p>早订多减</p></div>
-                            <div class="style-list-price">￥638<span>/起</span></div>
+                            <div class="favorable-txt">成熟市场川端康成的活动洒洒水CDC的时时处处</div>
+                            <div class="style-list-price">
+                                ￥<span class="number">638</span>/起
+                                <span class="underline">美团价￥22</span>
+                                <span class="location">王府井/东单</span>
+                            </div>
                         </div>
-                        <div class="style-list">
-                            <img src="/images/nav-carousel1.jpg" alt="">
-                            <p class="style-list-title">正义路酒店</p>
-                            <div class="style-list-tag"><p>新春超值优惠标签</p><p>酒店套餐</p><p>连住优惠</p><p>早订多减</p></div>
-                            <div class="style-list-price">￥638<span>/起</span></div>
+                    </a>
+                    <div class="style-list">
+                        <img src="/images/nav-carousel1.jpg" alt="">
+                        <p class="style-list-title">正义路酒店</p>
+                        <div class="style-list-tag">
+                            <p>新春超值优惠标签</p>
+                            <p>酒店套餐</p>
+                            <p>连住优惠</p>
+                            <p>早订多减</p>
                         </div>
-                        <div class="style-list">
-                            <img src="/images/nav-carousel1.jpg" alt="">
-                            <p class="style-list-title">正义路酒店</p>
-                            <div class="style-list-tag"><p>新春超值优惠标签</p><p>酒店套餐</p><p>连住优惠</p><p>早订多减</p></div>
-                            <div class="style-list-price">￥638<span>/起</span></div>
+                        <div class="style-list-price">
+                            ￥<span class="number">638</span>/起
+                            <!-- <span class="underline">美团价￥22</span> -->
                         </div>
-                        <div class="style-list">
-                            <img src="/images/nav-carousel1.jpg" alt="">
-                            <p class="style-list-title">正义路酒店</p>
-                            <div class="style-list-tag"><p>新春超值优惠标签</p><p>酒店套餐</p><p>连住优惠</p><p>早订多减</p></div>
-                            <div class="style-list-price">￥638<span>/起</span></div>
+                    </div>
+                    <div class="style-list">
+                        <img src="/images/nav-carousel1.jpg" alt="">
+                        <p class="style-list-title">正义路酒店</p>
+                        <div class="style-list-tag">
+                            <p>新春超值优惠标签</p>
+                            <p>酒店套餐</p>
+                            <p>连住优惠</p>
+                            <p>早订多减</p>
                         </div>
-                        <div class="style-list">
-                            <img src="/images/nav-carousel1.jpg" alt="">
-                            <p class="style-list-title">正义路酒店</p>
-                            <div class="style-list-tag"><p>新春超值优惠标签</p><p>酒店套餐</p><p>连住优惠</p><p>早订多减</p></div>
-                            <div class="style-list-price">￥638<span>/起</span></div>
+                        <div class="style-list-price">
+                            ￥<span class="number">638</span>/起
+                            <!-- <span class="underline">美团价￥22</span> -->
                         </div>
+                    </div>
+                    <div class="style-list">
+                        <img src="/images/nav-carousel1.jpg" alt="">
+                        <p class="style-list-title">正义路酒店</p>
+                        <div class="style-list-tag">
+                            <p>新春超值优惠标签</p>
+                            <p>酒店套餐</p>
+                            <p>连住优惠</p>
+                            <p>早订多减</p>
+                        </div>
+                        <div class="style-list-price">
+                            ￥<span class="number">638</span>/起
+                            <!-- <span class="underline">美团价￥22</span> -->
+                        </div>
+                    </div>
+                    <div class="style-list">
+                        <img src="/images/nav-carousel1.jpg" alt="">
+                        <p class="style-list-title">正义路酒店</p>
+                        <div class="style-list-tag">
+                            <p>新春超值优惠标签</p>
+                            <p>酒店套餐</p>
+                            <p>连住优惠</p>
+                            <p>早订多减</p>
+                        </div>
+                        <div class="style-list-price">
+                            ￥<span class="number">638</span>/起
+                            <!-- <span class="underline">美团价￥22</span> -->
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="favorable">
-                <div class="style-top module-header">
+                <div class="style-top">
                     <p>狠优惠</p>
                     <ul>
                         <li><a href="">全部</a></li>
@@ -318,146 +369,331 @@
                     </ul>
                 </div>
                 <div class="style-content">
-                        <div class="style-list">
-                            <img src="/images/nav-carousel1.jpg" alt="">
-                            <p class="style-list-title">正义路酒店</p>
-                            <div class="favorable-txt">成熟市场川端康成的活动</div>
-                            <div class="style-list-price">￥638<span>/起</span></div>
+                    <div class="style-list">
+                        <img src="/images/nav-carousel1.jpg" alt="">
+                        <p class="style-list-title">正义路酒店</p>
+                        <div class="favorable-txt">成熟市场川端康成的活动洒洒水CDC的时时处处</div>
+                        <div class="style-list-price">
+                            ￥<span class="number">14</span>
+                            <span class="underline">美团价￥22</span>
+                            <span class="sold">已售2.7万</span>
                         </div>
-                        <div class="style-list">
-                            <img src="/images/nav-carousel1.jpg" alt="">
-                            <p class="style-list-title">正义路酒店</p>
-                            <div class="favorable-txt">成熟市场川端康成的活动</div>
-                            <div class="style-list-price">￥638<span>/起</span></div>
+                    </div>
+                    <div class="style-list">
+                        <img src="/images/nav-carousel1.jpg" alt="">
+                        <p class="style-list-title">正义路酒店</p>
+                        <div class="favorable-txt">成熟市场川端康成的活动</div>
+                        <div class="style-list-price">
+                            ￥<span class="number">14</span>
+                            <span class="underline">美团价￥22</span>
+                            <span class="sold">已售2.7万</span>
                         </div>
-                        <div class="style-list">
-                            <img src="/images/nav-carousel1.jpg" alt="">
-                            <p class="style-list-title">正义路酒店</p>
-                            <div class="favorable-txt">成熟市场川端康成的活动</div>
-                            <div class="style-list-price">￥638<span>/起</span></div>
-                        </div> 
-                        <div class="style-list">
-                            <img src="/images/nav-carousel1.jpg" alt="">
-                            <p class="style-list-title">正义路酒店</p>
-                            <div class="favorable-txt">成熟市场川端康成的活动</div>
-                            <div class="style-list-price">￥638<span>/起</span></div>
+                    </div>
+                    <div class="style-list">
+                        <img src="/images/nav-carousel1.jpg" alt="">
+                        <p class="style-list-title">正义路酒店</p>
+                        <div class="favorable-txt">成熟市场川端康成的活动</div>
+                        <div class="style-list-price">
+                            ￥<span class="number">14</span>
+                            <span class="underline">美团价￥22</span>
+                            <span class="sold">已售2.7万</span>
                         </div>
-                        <div class="style-list">
-                            <img src="/images/nav-carousel1.jpg" alt="">
-                            <p class="style-list-title">正义路酒店</p>
-                            <div class="favorable-txt">成熟市场川端康成的活动</div>
-                            <div class="style-list-price">￥638<span>/起</span></div>
+                    </div>
+                    <div class="style-list">
+                        <img src="/images/nav-carousel1.jpg" alt="">
+                        <p class="style-list-title">正义路酒店</p>
+                        <div class="favorable-txt">成熟市场川端康成的活动</div>
+                        <div class="style-list-price">
+                            ￥<span class="number">14</span>
+                            <span class="underline">美团价￥22</span>
+                            <span class="sold">已售2.7万</span>
                         </div>
-                        <div class="style-list">
-                            <img src="/images/nav-carousel1.jpg" alt="">
-                            <p class="style-list-title">正义路酒店</p>
-                            <div class="favorable-txt">成熟市场川端康成的活动</div>
-                            <div class="style-list-price">￥638<span>/起</span></div>
+                    </div>
+                    <div class="style-list">
+                        <img src="/images/nav-carousel1.jpg" alt="">
+                        <p class="style-list-title">正义路酒店</p>
+                        <div class="favorable-txt">成熟市场川端康成的活动</div>
+                        <div class="style-list-price">
+                            ￥<span class="number">14</span>
+                            <span class="underline">美团价￥22</span>
+                            <span class="sold">已售2.7万</span>
                         </div>
-                        <div class="style-list">
-                            <img src="/images/nav-carousel1.jpg" alt="">
-                            <p class="style-list-title">正义路酒店</p>
-                            <div class="favorable-txt">成熟市场川端康成的活动</div>
-                            <div class="style-list-price">￥638<span>/起</span></div>
+                    </div>
+                    <div class="style-list">
+                        <img src="/images/nav-carousel1.jpg" alt="">
+                        <p class="style-list-title">正义路酒店</p>
+                        <div class="favorable-txt">成熟市场川端康成的活动</div>
+                        <div class="style-list-price">
+                            ￥<span class="number">14</span>
+                            <span class="underline">美团价￥22</span>
+                            <span class="sold">已售2.7万</span>
                         </div>
-                        <div class="style-list">
-                            <img src="/images/nav-carousel1.jpg" alt="">
-                            <p class="style-list-title">正义路酒店</p>
-                            <div class="favorable-txt">成熟市场川端康成的活动</div>
-                            <div class="style-list-price">￥638<span>/起</span></div>
+                    </div>
+                    <div class="style-list">
+                        <img src="/images/nav-carousel1.jpg" alt="">
+                        <p class="style-list-title">正义路酒店</p>
+                        <div class="favorable-txt">成熟市场川端康成的活动</div>
+                        <div class="style-list-price">
+                            ￥<span class="number">14</span>
+                            <span class="underline">美团价￥22</span>
+                            <span class="sold">已售2.7万</span>
                         </div>
-                        <div class="style-list">
-                            <img src="/images/nav-carousel1.jpg" alt="">
-                            <p class="style-list-title">正义路酒店</p>
-                            <div class="favorable-txt">成熟市场川端康成的活动</div>
-                            <div class="style-list-price">￥638<span>/起</span></div>
+                    </div>
+                    <div class="style-list">
+                        <img src="/images/nav-carousel1.jpg" alt="">
+                        <p class="style-list-title">正义路酒店</p>
+                        <div class="favorable-txt">成熟市场川端康成的活动</div>
+                        <div class="style-list-price">
+                            ￥<span class="number">14</span>
+                            <span class="underline">美团价￥22</span>
+                            <span class="sold">已售2.7万</span>
                         </div>
-                        <div class="style-list">
-                            <img src="/images/nav-carousel1.jpg" alt="">
-                            <p class="style-list-title">正义路酒店</p>
-                            <div class="favorable-txt">成熟市场川端康成的活动</div>
-                            <div class="style-list-price">￥638<span>/起</span></div>
+                    </div>
+                    <div class="style-list">
+                        <img src="/images/nav-carousel1.jpg" alt="">
+                        <p class="style-list-title">正义路酒店</p>
+                        <div class="favorable-txt">成熟市场川端康成的活动</div>
+                        <div class="style-list-price">
+                            ￥<span class="number">14</span>
+                            <span class="underline">美团价￥22</span>
+                            <span class="sold">已售2.7万</span>
                         </div>
-                </div>  
+                    </div>
+                    <div class="style-list">
+                        <img src="/images/nav-carousel1.jpg" alt="">
+                        <p class="style-list-title">正义路酒店</p>
+                        <div class="favorable-txt">成熟市场川端康成的活动</div>
+                        <div class="style-list-price">
+                            ￥<span class="number">14</span>
+                            <span class="underline">美团价￥22</span>
+                            <span class="sold">已售2.7万</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="maoyanmovie">
-                <div class="style-top module-header">
-                    <p>猫眼电影</p>
-                    <ul>
-                        <li><a href="">全部</a></li>
-                        <li><a href="">约会聚餐</a></li>
-                        <li><a href="">丽人SPA</a></li>
-                        <li><a href="">电影演出</a></li>
-                        <li><a href="">品质出游</a></li>
-                    </ul>
+                <div class="style-top">
+                    <div>
+                        <p>猫眼电影</p>
+                        <ul>
+                            <li><a href="">全部</a></li>
+                            <li><a href="">约会聚餐</a></li>
+                            <li><a href="">丽人SPA</a></li>
+                            <li><a href="">电影演出</a></li>
+                            <li><a href="">品质出游</a></li>
+                        </ul>
+                    </div>
+                    <a href="http://maoyan.com/?utm_source=meituanweb" class="all">全部></a>
                 </div>
                 <div class="style-content">
-                    <a href="">
-                        <div class="style-list">
-                            <img src="/images/nav-carousel1.jpg" alt="">
-                            <p class="style-list-title">正义路酒店</p>
-                            <div class="style-list-tag"><p>新春超值优惠标签</p><p>酒店套餐</p><p>连住优惠</p><p>早订多减</p></div>
-                            <span class="style-list-price">￥638起</span>
+
+                    <div class="maoyan-list">
+                        <a href=""><img src="/images/movie.jpg" alt=""></a>
+                        <img src="" alt="">
+                        <div class="film-info">
+                            <!-- <div class="film-score">
+                                <p class="wish"><span calss="wish-number">1296</span>人想看</p>
+                                <p class="film-name">黄金兄弟</p>
+                            </div>
+                            <div class="buy-ticket">预售</div> -->
+                            <p class="film-score">
+                                <b>
+                                    <span>1296</span>
+                                    人想看
+                                </b>
+                            </p>
+                            <p class="film-name">黄金兄弟</p>
+                            <span class="buy-ticket">预售</span>
                         </div>
-                    </a>
-                    <a href="">
-                        <div class="style-list">
-                            <img src="/images/nav-carousel1.jpg" alt="">
-                            <p class="style-list-title">正义路酒店</p>
-                            <div class="style-list-tag"><p>新春超值优惠标签</p><p>酒店套餐</p><p>连住优惠</p><p>早订多减</p></div>
-                            <span class="style-list-price">￥638起</span>
+                    </div>
+                    <div class="maoyan-list">
+                        <a href=""><img src="/images/movie.jpg" alt=""></a>
+                        <img src="" alt="">
+                        <div class="film-info">
+                            <!-- <div class="film-score">
+                                    <p class="wish"><span calss="wish-number">1296</span>人想看</p>
+                                    <p class="film-name">黄金兄弟</p>
+                                </div>
+                                <div class="buy-ticket">预售</div> -->
+                            <p class="film-score">
+                                <b>
+                                    <span>1296</span>
+                                    " 人想看"
+                                </b>
+                            </p>
+                            <p class="film-name">黄金兄弟</p>
+                            <span class="buy-ticket">预售</span>
                         </div>
-                    </a>
-                    <a href="">
-                        <div class="style-list">
-                            <img src="/images/nav-carousel1.jpg" alt="">
-                            <p class="style-list-title">正义路酒店</p>
-                            <div class="style-list-tag"><p>新春超值优惠标签</p><p>酒店套餐</p><p>连住优惠</p><p>早订多减</p></div>
-                            <span class="style-list-price">￥638起</span>
+                    </div>
+                    <div class="maoyan-list">
+                        <a href=""><img src="/images/movie.jpg" alt=""></a>
+                        <img src="" alt="">
+                        <div class="film-info">
+                            <!-- <div class="film-score">
+                                        <p class="wish"><span calss="wish-number">1296</span>人想看</p>
+                                        <p class="film-name">黄金兄弟</p>
+                                    </div>
+                                    <div class="buy-ticket">预售</div> -->
+                            <p class="film-score">
+                                <b>
+                                    <span>1296</span>
+                                    " 人想看"
+                                </b>
+                            </p>
+                            <p class="film-name">黄金兄弟</p>
+                            <span class="buy-ticket">预售</span>
                         </div>
-                    </a>
+                    </div>
+                    <div class="maoyan-list">
+                        <a href=""><img src="/images/movie.jpg" alt=""></a>
+                        <img src="" alt="">
+                        <div class="film-info">
+                            <!-- <div class="film-score">
+                                            <p class="wish"><span calss="wish-number">1296</span>人想看</p>
+                                            <p class="film-name">黄金兄弟</p>
+                                        </div>
+                                        <div class="buy-ticket">预售</div> -->
+                            <p class="film-score">
+                                <b>
+                                    <span>1296</span>
+                                    " 人想看"
+                                </b>
+                            </p>
+                            <p class="film-name">黄金兄弟</p>
+                            <span class="buy-ticket">预售</span>
+                        </div>
+                    </div>
+                    <div class="maoyan-list">
+                        <a href=""><img src="/images/movie.jpg" alt=""></a>
+                        <img src="" alt="">
+                        <div class="film-info">
+                            <!-- <div class="film-score">
+                                                <p class="wish"><span calss="wish-number">1296</span>人想看</p>
+                                                <p class="film-name">黄金兄弟</p>
+                                            </div>
+                                            <div class="buy-ticket">预售</div> -->
+                            <p class="film-score">
+                                <b>
+                                    <span>1296</span>
+                                    " 人想看"
+                                </b>
+                            </p>
+                            <p class="film-name">黄金兄弟</p>
+                            <span class="buy-ticket">预售</span>
+                        </div>
+                    </div>
+                    <div class="maoyan-list">
+                        <a href=""><img src="/images/movie.jpg" alt=""></a>
+                        <img src="" alt="">
+                        <div class="film-info">
+                            <!-- <div class="film-score">
+                                                    <p class="wish"><span calss="wish-number">1296</span>人想看</p>
+                                                    <p class="film-name">黄金兄弟</p>
+                                                </div>
+                                                <div class="buy-ticket">预售</div> -->
+                            <p class="film-score">
+                                <b>
+                                    <span>1296</span>
+                                    " 人想看"
+                                </b>
+                            </p>
+                            <p class="film-name">黄金兄弟</p>
+                            <span class="buy-ticket">预售</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="homestay">
                 <div class="style-top module-header">
-                    <p>推荐民宿</p>
-                    <ul>
-                        <li><a href="">全部</a></li>
-                        <li><a href="">约会聚餐</a></li>
-                        <li><a href="">丽人SPA</a></li>
-                        <li><a href="">电影演出</a></li>
-                        <li><a href="">品质出游</a></li>
-                    </ul>
+                    <div>
+                        <p>推荐民宿</p>
+                        <ul>
+                            <li><a href="">全部</a></li>
+                            <li><a href="">约会聚餐</a></li>
+                            <li><a href="">丽人SPA</a></li>
+                            <li><a href="">电影演出</a></li>
+                            <li><a href="">品质出游</a></li>
+                        </ul>
+                    </div>
+                    <a href="https://phoenix.meituan.com/?phx_wake_up_type=mtpc_category&phx_wake_up_source=recommend"
+                        class="all">全部></a>
                 </div>
                 <div class="style-content">
                     <a href="">
                         <div class="style-list">
+                            <img src="/images/small-img.jpg" class="small-img" alt="">
                             <img src="/images/nav-carousel1.jpg" alt="">
                             <p class="style-list-title">正义路酒店</p>
-                            <div class="style-list-tag"><p>新春超值优惠标签</p><p>酒店套餐</p><p>连住优惠</p><p>早订多减</p></div>
-                            <span class="style-list-price">￥638起</span>
+                            <div class="favorable-txt">成熟市场川端康成的活动洒洒水CDC的时时处处</div>
+                            <div class="style-list-price">
+                                ￥<span class="number">638</span>
+                                <!-- <span class="underline">美团价￥22</span> -->
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="style-list">
+                            <img src="/images/small-img.jpg" class="small-img" alt="">
+                            <img src="/images/nav-carousel1.jpg" alt="">
+                            <p class="style-list-title">正义路酒店</p>
+                            <div class="favorable-txt">成熟市场川端康成的活动洒洒水CDC的时时处处</div>
+                            <div class="style-list-price">
+                                ￥<span class="number">638</span>
+                                <!-- <span class="underline">美团价￥22</span> -->
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="style-list">
+                            <img src="/images/small-img.jpg" class="small-img" alt="">
+                            <img src="/images/nav-carousel1.jpg" alt="">
+                            <p class="style-list-title">正义路酒店</p>
+                            <div class="favorable-txt">成熟市场川端康成的活动洒洒水CDC的时时处处</div>
+                            <div class="style-list-price">
+                                ￥<span class="number">638</span>
+                                <!-- <span class="underline">美团价￥22</span> -->
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="style-list">
+                            <img src="/images/small-img.jpg" class="small-img" alt="">
+                            <img src="/images/nav-carousel1.jpg" alt="">
+                            <p class="style-list-title">正义路酒店</p>
+                            <div class="favorable-txt">成熟市场川端康成的活动洒洒水CDC的时时处处</div>
+                            <div class="style-list-price">
+                                ￥<span class="number">638</span>
+                                <!-- <span class="underline">美团价￥22</span> -->
+                            </div>
                         </div>
                     </a>
                     <a href="">
                         <div class="style-list">
                             <img src="/images/nav-carousel1.jpg" alt="">
                             <p class="style-list-title">正义路酒店</p>
-                            <div class="style-list-tag"><p>新春超值优惠标签</p><p>酒店套餐</p><p>连住优惠</p><p>早订多减</p></div>
-                            <span class="style-list-price">￥638起</span>
+                            <div class="favorable-txt">成熟市场川端康成的活动洒洒水CDC的时时处处</div>
+                            <div class="style-list-price">
+                                ￥<span class="number">638</span>
+                                <!-- <span class="underline">美团价￥22</span> -->
+                            </div>
                         </div>
                     </a>
                     <a href="">
                         <div class="style-list">
                             <img src="/images/nav-carousel1.jpg" alt="">
                             <p class="style-list-title">正义路酒店</p>
-                            <div class="style-list-tag"><p>新春超值优惠标签</p><p>酒店套餐</p><p>连住优惠</p><p>早订多减</p></div>
-                            <span class="style-list-price">￥638起</span>
+                            <div class="favorable-txt">成熟市场川端康成的活动洒洒水CDC的时时处处</div>
+                            <div class="style-list-price">
+                                ￥<span class="number">638</span>
+                                <!-- <span class="underline">美团价￥22</span> -->
+                            </div>
                         </div>
                     </a>
                 </div>
             </div>
             <div class="guesslike">
-                <div class="style-top module-header">
+                <div class="style-top">
                     <p>猜你喜欢</p>
                     <ul>
                         <li><a href="">全部</a></li>
@@ -472,7 +708,28 @@
                         <div class="style-list">
                             <img src="/images/nav-carousel1.jpg" alt="">
                             <p class="style-list-title">正义路酒店</p>
-                            <div class="style-list-tag"><p>新春超值优惠标签</p><p>酒店套餐</p><p>连住优惠</p><p>早订多减</p></div>
+                            <div class="evaluation">
+                                <span class="star">
+                                    <svg class="icon icon-star" aria-hidden="true">
+                                        <use xlink:href="#icon-xing"></use>
+                                    </svg>
+                                    <svg class="icon icon-star" aria-hidden="true">
+                                        <use xlink:href="#icon-xing"></use>
+                                    </svg>
+                                    <svg class="icon icon-star" aria-hidden="true">
+                                        <use xlink:href="#icon-xing"></use>
+                                    </svg>
+                                    <svg class="icon icon-star" aria-hidden="true">
+                                        <use xlink:href="#icon-xing"></use>
+                                    </svg>
+                                    <svg class="icon icon-star" aria-hidden="true">
+                                        <use xlink:href="#icon-xing"></use>
+                                    </svg>
+
+                                </span>
+                                <span>17485个评价</span>
+                            </div>
+                            <div class="favorable-txt">成熟市场川端康成的活动洒洒水CDC的时时处处</div>
                             <span class="style-list-price">￥638起</span>
                         </div>
                     </a>
@@ -480,7 +737,8 @@
                         <div class="style-list">
                             <img src="/images/nav-carousel1.jpg" alt="">
                             <p class="style-list-title">正义路酒店</p>
-                            <div class="style-list-tag"><p>新春超值优惠标签</p><p>酒店套餐</p><p>连住优惠</p><p>早订多减</p></div>
+                            <div class="evaluation"></div>
+                            <div class="favorable-txt">成熟市场川端康成的活动洒洒水CDC的时时处处</div>
                             <span class="style-list-price">￥638起</span>
                         </div>
                     </a>
@@ -488,14 +746,86 @@
                         <div class="style-list">
                             <img src="/images/nav-carousel1.jpg" alt="">
                             <p class="style-list-title">正义路酒店</p>
-                            <div class="style-list-tag"><p>新春超值优惠标签</p><p>酒店套餐</p><p>连住优惠</p><p>早订多减</p></div>
+                            <div class="evaluation"></div>
+                            <div class="favorable-txt">成熟市场川端康成的活动洒洒水CDC的时时处处</div>
+                            <span class="style-list-price">￥638起</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="style-list">
+                            <img src="/images/nav-carousel1.jpg" alt="">
+                            <p class="style-list-title">正义路酒店</p>
+                            <div class="evaluation"></div>
+                            <div class="favorable-txt">成熟市场川端康成的活动洒洒水CDC的时时处处</div>
+                            <span class="style-list-price">￥638起</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="style-list">
+                            <img src="/images/nav-carousel1.jpg" alt="">
+                            <p class="style-list-title">正义路酒店</p>
+                            <div class="evaluation"></div>
+                            <div class="favorable-txt">成熟市场川端康成的活动洒洒水CDC的时时处处</div>
+                            <span class="style-list-price">￥638起</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="style-list">
+                            <img src="/images/nav-carousel1.jpg" alt="">
+                            <p class="style-list-title">正义路酒店</p>
+                            <div class="evaluation"></div>
+                            <div class="favorable-txt">成熟市场川端康成的活动洒洒水CDC的时时处处</div>
+                            <span class="style-list-price">￥638起</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="style-list">
+                            <img src="/images/nav-carousel1.jpg" alt="">
+                            <p class="style-list-title">正义路酒店</p>
+                            <div class="evaluation"></div>
+                            <div class="favorable-txt">成熟市场川端康成的活动洒洒水CDC的时时处处</div>
+                            <span class="style-list-price">￥638起</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="style-list">
+                            <img src="/images/nav-carousel1.jpg" alt="">
+                            <p class="style-list-title">正义路酒店</p>
+                            <div class="evaluation"></div>
+                            <div class="favorable-txt">成熟市场川端康成的活动洒洒水CDC的时时处处</div>
+                            <span class="style-list-price">￥638起</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="style-list">
+                            <img src="/images/nav-carousel1.jpg" alt="">
+                            <p class="style-list-title">正义路酒店</p>
+                            <div class="style-list-tag">
+                                <p>新春超值优惠标签</p>
+                                <p>酒店套餐</p>
+                                <p>连住优惠</p>
+                                <p>早订多减</p>
+                            </div>
+                            <span class="style-list-price">￥638起</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="style-list">
+                            <img src="/images/nav-carousel1.jpg" alt="">
+                            <p class="style-list-title">正义路酒店</p>
+                            <div class="style-list-tag">
+                                <p>新春超值优惠标签</p>
+                                <p>酒店套餐</p>
+                                <p>连住优惠</p>
+                                <p>早订多减</p>
+                            </div>
                             <span class="style-list-price">￥638起</span>
                         </div>
                     </a>
                 </div>
             </div>
             <div class="meituannav">
-                <div class="style-top module-header">
+                <div class="style-top">
                     <p>美团导航</p>
                     <ul>
                         <li><a href="">全部</a></li>
@@ -505,39 +835,17 @@
                         <li><a href="">品质出游</a></li>
                     </ul>
                 </div>
-                <div class="style-content">
-                    <a href="">
-                        <div class="style-list">
-                            <img src="/images/nav-carousel1.jpg" alt="">
-                            <p class="style-list-title">正义路酒店</p>
-                            <div class="style-list-tag"><p>新春超值优惠标签</p><p>酒店套餐</p><p>连住优惠</p><p>早订多减</p></div>
-                            <span class="style-list-price">￥638起</span>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="style-list">
-                            <img src="/images/nav-carousel1.jpg" alt="">
-                            <p class="style-list-title">正义路酒店</p>
-                            <div class="style-list-tag"><p>新春超值优惠标签</p><p>酒店套餐</p><p>连住优惠</p><p>早订多减</p></div>
-                            <span class="style-list-price">￥638起</span>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="style-list">
-                            <img src="/images/nav-carousel1.jpg" alt="">
-                            <p class="style-list-title">正义路酒店</p>
-                            <div class="style-list-tag"><p>新春超值优惠标签</p><p>酒店套餐</p><p>连住优惠</p><p>早订多减</p></div>
-                            <span class="style-list-price">￥638起</span>
-                        </div>
-                    </a>
+                <div class="meituannav-content">
+                    
                 </div>
             </div>
         </div>
     </section>
 
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
-    <script src="http://at.alicdn.com/t/font_839449_3g34gjazmcw.js"></script>
+    <script src="//at.alicdn.com/t/font_839449_z39o4chytmm.js"></script>
     <!-- inject:js -->
     <!-- endinject -->
 </body>
+
 </html>
