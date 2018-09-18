@@ -1,3 +1,4 @@
+//header-bar特效
 $(".haschild").hover(function() {
     $(this).addClass("header-bar-list-active")
     $(this).children("a").css({"color": "#31BBAC"});
@@ -5,6 +6,12 @@ $(".haschild").hover(function() {
 },function() {
     $(this).removeClass("header-bar-list-active");
     $(this).children("a").css({"color": "#999"});
+    $(this).find(".header-bar-list-show").css({"display": "none"})
+})
+//网站导航
+$(".haschild").eq(2).hover(function() {
+    $(this).find(".header-bar-list-show").css({"display": "flex"})
+},function() {
     $(this).find(".header-bar-list-show").css({"display": "none"})
 })
 
@@ -20,6 +27,7 @@ $(".header-bar-list-show").find("a").hover(function() {
     $(this).css({"color": "#999"})
 })
 
+//头部搜索框下的内容
 $.ajax({
     type:"get",
     url:"/json/header-search.json",

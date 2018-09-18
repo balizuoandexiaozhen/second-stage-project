@@ -7,13 +7,17 @@ $.ajax({
     }
 })
 
-$(".style-list").hover(function() {
-    $(this).animate({
-        background: rgba(0,0,0,0.7)
-    });
-}, function() {
-    $(this).animate({
-        background: rgba(0,0,0,0)
-    });
-})
+
+// $(".style-list").hover(function() {
+//     console.log(111);
+//     $(this).css({"background-color": "rgba(244, 244, 244,1)"})
+//     // $(this).animate({
+//     //     "background-color": "rgba(244, 244, 244,1)"
+//     // });
+// }, function() {
+//     $(this).css({"background-color": "rgba(244, 244, 244,0)"})
+//     // $(this).animate({
+//     //     "background-color": "rgba(244, 244, 244,0)"
+//     // });
+// })
 

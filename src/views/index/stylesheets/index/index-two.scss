@@ -219,42 +219,43 @@ section {
                         //     // margin
                         // }
                     }
-                }
-                .nav-hide {
-                    display: none;
-                    position: absolute;
-                    top: 0px;
-                    bottom: 0;
-                    left: 230px;
-                    width: 340px;
-                    // height: 416px;
-                    background-color: #fff;
-                    // color: #666;
-                    overflow: hidden;
-                    // z-index: 100;
-                    padding: 0 30px;
-                    .nav-hide-title {
-                        // color: red;
-                        display: flex;
-                        justify-content: space-between;
-                        padding-bottom: 15px;
-                        margin-bottom: 15px;
-                        margin-top: 30px;
-                        border-bottom: 1px solid #e5e5e5;
-                        a {
-                            font-size: 13px;
-                            color: #666;
-                        }
-                    }
-                    .nav-hide-content {
-                        a {
-                            display: inline-block;
-                            margin-right:  10px;
-                            margin-bottom: 10px;
+                    .nav-hide {
+                        display: none;
+                        position: absolute;
+                        z-index: 100;
+                        top: 0px;
+                        bottom: 0;
+                        left: 230px;
+                        width: 340px;
+                        // height: 416px;
+                        background-color: #fff;
+                        // color: #666;
+                        overflow: hidden;
+                        // z-index: 100;
+                        padding: 0 30px;
+                        .nav-hide-title {
                             // color: red;
+                            display: flex;
+                            justify-content: space-between;
+                            padding-bottom: 15px;
+                            margin-bottom: 15px;
+                            margin-top: 30px;
+                            border-bottom: 1px solid #e5e5e5;
+                            a {
+                                font-size: 13px;
+                                color: #666;
+                            }
                         }
-                        a:hover {
-                            color: #31BBAC;
+                        .nav-hide-content {
+                            a {
+                                display: inline-block;
+                                margin-right:  10px;
+                                margin-bottom: 10px;
+                                color: #999;
+                            }
+                            a:hover {
+                                color: #31BBAC;
+                            }
                         }
                     }
                 }
@@ -272,13 +273,31 @@ section {
                     .nav-carousel {
                         width: 550px;
                         height: 240px;
-                        background-image: url(/images/nav-carousel1.jpg);
-                    }
+                        // overflow: hidden;
+                        ul {
+                            position: relative;
+                            // overflow: hidden;
+                            width: 550px;
+                            height: 240px;
+                            li {
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                // background-image: url(/images/nav-carousel1.jpg);
+                                background-size: contain;
+                                // display: none;
+
+                            }
+                            li:nth-of-type(1) {
+                                z-index: 1;
+                            }
+                        }
+                    }   
                     .nav-content-top2 {
                         width: 150px;
                         height:240px;
                         // background: blue;
-                        background-image: url(/images/nav-content-top2.jpg);
+                        background-size: contain;
                     }
                     .nav-login {
                         width: 230px;
@@ -317,21 +336,19 @@ section {
                         width: 270px;
                         height: 165px;
                         // background: green;
-                        background-image: url(/images/nav-content-top2.jpg);
-                        
+                        background-size: contain;
                     }
                     .nav-content-bottom2 {
                         width: 270px;
                         height: 165px;
                         // background: red;
-                        background-image: url(/images/nav-content-top2.jpg);
-
+                        background-size: contain;
                     }
                     .nav-content-bottom3 {
                         width: 150px;
                         height: 165px;
                         // background: blue;
-                        background-image: url(/images/nav-content-top2.jpg);
+                        background-size: contain;
                     }
                     .nav-qr-code {
                         display: flex;
@@ -431,14 +448,14 @@ section {
                 }
             }
         }
-        .favorable {
-            display: block;
-            width: 213px;
-            height: 270px;
-            padding: 10px;
-            float: left;
-            background-color: #fff;
-            transition: background-color .5s;
-        }
+        // .favorable {
+        //     display: block;
+        //     width: 213px;
+        //     height: 270px;
+        //     padding: 10px;
+        //     float: left;
+        //     background-color: #fff;
+        //     transition: background-color .5s;
+        // }
     }
 }
