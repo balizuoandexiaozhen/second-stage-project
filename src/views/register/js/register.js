@@ -266,7 +266,7 @@ $(".creat-pwd").blur(function() {
 
 //确认密码
 $(".qr-pwd").blur(function() {
-    console.log(000);
+    // console.log(000);
     $(this).css("border-color","red");
     if(fnQpwd()) {
         var str = `<svg class="icon true" aria-hidden="true">

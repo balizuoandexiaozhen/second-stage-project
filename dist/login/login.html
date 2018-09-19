@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>登录</title>
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/login/css/login.min.css">
+    <!-- endinject -->
 </head>
 <body>
-    打算大苏打大大
+    <header>
+        <div class="heder-center">
+            <a class="site-logo" href="http://www.meituan.com"></a>
+        </div>
+    </header>
+    <section>
+        <div class="content">
+            <div class="login-img">
+                <img src="/images/login.jpg" alt="">
+            </div>
+            <div>
+                <form action="">
+                    <p class="form-header">
+                        <span>账号登录</span>
+                        <span class="header-txt">手机动态码登录
+                            <svg class="icon phone" aria-hidden="true">
+                                <use xlink:href="#icon-shouji"></use>
+                            </svg>
+                        </span>
+                    </p>
+                    <div class="frame">
+                        <svg class="icon user-icon" aria-hidden="true">
+                            <use xlink:href="#icon-shouji"></use>
+                        </svg>
+                        <input class="input-txt" type="text" placeholder="手机号/用户名/邮箱">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//at.alicdn.com/t/font_839449_crw9tobt4oa.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery.cookie.js"></script> -->
+    <!-- inject:js -->
+    <script src="/login/js/login.min.js"></script>
+    <!-- endinject -->
 </body>
 </html>
