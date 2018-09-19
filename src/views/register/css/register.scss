@@ -1,3 +1,7 @@
+// * {
+//     margin: 0;
+//     padding: 0;
+// }
 body {
     color: #666;
     font-size: 14px;
@@ -63,7 +67,17 @@ section {
                 padding: 5px;
                 border: 1px solid #aaa;
                 line-height: 24px;
+                margin-right: 5px;
                 // vertical-align: top;
+            }
+        }
+        
+        .pwd-strong-txt {
+            position: relative;
+            .tip {
+                position: absolute;
+                top: 8px; 
+                left: 390px;
             }
         }
         .mobile {
@@ -82,6 +96,10 @@ section {
                 border: 1px solid #e3e3e3;
                 border-bottom: 1px solid #aaa;
                 border-radius: 3px;
+                margin-right: 15px;
+            }
+            i {
+                color: red;
             }
         }
         .pwd-strong {
@@ -91,7 +109,8 @@ section {
                 font-size: 12px;
                 margin-right: 5px;
                 text-align: center;
-                padding: 3px 0;
+                // padding: 3px 0;
+                height: 20px;
                 flex: 1;
                 color: #fff;
                 background-color: rgb(238, 238, 238);
@@ -102,8 +121,18 @@ section {
                 top: 0;
                 left: 0;
                 width: 0%;
-                display: none;
-                background-color: red;
+                // display: none;
+                // background-color: red;
+            }
+            .hide-txt {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: rgba(0,0,0,0);
+                line-height: 20px;
+                // display: none;
+                // background-color: red;
             }
         }
         .sub-btn {
@@ -120,15 +149,19 @@ section {
             color: #666;
             font-size: 12px;
             display: flex;
-           align-items: center;
+            align-items: center;
             .false {
                 font-size: 22px;
                 color: rgb(255, 136, 0);
             }
             .true {
-                font-size: 22px;
+                font-size: 20px;
                 color: rgb(142, 210, 0);
             } 
+            .loading {
+                font-size: 22px;
+                color: rgb(135, 190, 222);
+            }
         }
         .agree {
             color: #2bb8aa;
