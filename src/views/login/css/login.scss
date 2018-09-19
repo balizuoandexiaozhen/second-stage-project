@@ -22,7 +22,10 @@ section {
         color: #666;
         font-size: 14px;
         form {
+            margin-top: 50px;
+            margin-left: 70px;  
             .form-header {
+                margin-bottom: 10px;
                 display: flex;
                 justify-content: space-between;
                 .header-txt {
@@ -35,16 +38,41 @@ section {
                 }
             }
             .frame {
-                width: 250px;
-                padding: 6px 0;
+                width: 270px;
+                padding: 8px 0 8px 5px;;
                 border: 1px solid #aaa;
+                margin-bottom: 15px;
                 .user-icon {
                     color: rgb(221, 221, 221);
-                    font-size: 16px;
+                    font-size: 20px;
                 }
                 .input-txt{
                     border: 0;
                     margin-left: 5px;
+                    margin-left: 5px;
+                }
+            }
+            .forget-pwd {
+                height: 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .small-stdio {
+                    display: inline-block;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 3px;
+                    border: 1px solid #999;
+                }
+                .small-stdio:hover {
+                    border-color: #2bb8aa;
+                }
+                .forgetpwd {
+                    float: right;
+                    color: #2bb8aa;
+                }
+                .forgetpwd:hover {
+                    text-decoration: underline;
                 }
             }
         }
