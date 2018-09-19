@@ -33,11 +33,13 @@ const config = {
         },
         'register': {
             'register': [
+                './src/stylesheets/reset.scss',
                 './src/views/register/css/*.scss'
             ]
         },
         'login': {
             'login': [
+                './src/stylesheets/reset.scss',
                 './src/views/login/css/*.scss'
             ]
         }
