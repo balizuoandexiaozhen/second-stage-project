@@ -311,5 +311,6 @@ $(function() {
 
 //     }
 //     // $.cookie('username', JSON.stringify(json));
-//     console.log($.cookie('username'));
+//     console.log($.cookie('register'));
+//     console.log(JSON.parse( $.cookie('register')));
 // })
