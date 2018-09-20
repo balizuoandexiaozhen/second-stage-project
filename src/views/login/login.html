@@ -21,40 +21,129 @@
             </div>
             <div>
                 <form action="">
-                    <p class="form-header">
-                        <span>账号登录</span>
-                        <span class="header-txt">手机动态码登录
-                            <svg class="icon phone" aria-hidden="true">
+                    <div class="account-number">
+                        <p class="form-header">
+                            <span>账号登录</span>
+                            <span class="header-txt">
+                                <span class="switch">手机动态码登录</span>
+                                <svg class="icon phone" aria-hidden="true">
+                                    <use xlink:href="#icon-shouji"></use>
+                                </svg>
+                            </span>
+                        </p>
+                        <div class="frame">
+                            <svg class="icon user-icon" aria-hidden="true">
+                                <use xlink:href="#icon-yonghu"></use>
+                            </svg>
+                            <input class="input-txt name" type="text" placeholder="手机号/用户名/邮箱">
+                        </div>
+                        <div class="frame">
+                            <svg class="icon user-icon" aria-hidden="true">
+                                <use xlink:href="#icon-suo"></use>
+                            </svg>
+                            <input class="input-txt pwd" type="password" placeholder="密码">
+                        </div>
+                        <div class="forget-pwd">
+                            <span class="small-stdio-out">
+                                <span class="small-stdio">
+                                    <svg class="icon duihao" aria-hidden="true">
+                                        <use xlink:href="#icon-xiaotuziCduan-"></use>
+                                    </svg>
+                                </span>
+                                <span>7天内自动登录</span>
+                            </span>
+                            <a class="forgetpwd" href="https://passport.meituan.com/account/retrievepassword?service=www&continue=http%3A%2F%2Fwww.meituan.com%2Faccount%2Fsettoken%3Fcontinue%3Dhttps%253A%252F%252Fbj.meituan.com%252F">忘记密码？</a>
+                        </div>
+                        <div class="login-btn">
+                            <span class="btn">登 录</span>
+                        </div>   
+                        <div class="no-number">
+                            <span class="small-stdio-out">
+                                <span>还没有账号?</span>
+                                <a class="free-register" href="/register/register.html">免费注册</a>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- <div class="account-number">
+                        <p class="form-header">
+                            <span>账号登录</span>
+                            <span class="header-txt">
+                                <span class="switch">普通方式登录</span>
+                                <svg class="icon phone" aria-hidden="true">
+                                    <use xlink:href="#icon-shouji"></use>
+                                </svg>
+                            </span>
+                        </p>
+                        <div class="frame">
+                            <svg class="icon user-icon" aria-hidden="true">
                                 <use xlink:href="#icon-shouji"></use>
                             </svg>
-                        </span>
-                    </p>
-                    <div class="frame">
-                        <svg class="icon user-icon" aria-hidden="true">
-                            <use xlink:href="#icon-shouji"></use>
-                        </svg>
-                        <input class="input-txt" type="text" placeholder="手机号/用户名/邮箱">
+                            <input class="input-txt" type="text" placeholder="手机号">
+                        </div>
+                        <div class="frame">
+                            <svg class="icon user-icon" aria-hidden="true">
+                                <use xlink:href="#icon-shouji"></use>
+                            </svg>
+                            <input class="input-txt" type="password" placeholder="动态码">
+                        </div>
+                        <div class="forget-pwd">
+                            <span class="small-stdio-out">
+                                <span class="small-stdio"></span>
+                                <span>7天内自动登录</span>
+                            </span>
+                            <a class="forgetpwd" href="https://passport.meituan.com/account/retrievepassword?service=www&continue=http%3A%2F%2Fwww.meituan.com%2Faccount%2Fsettoken%3Fcontinue%3Dhttps%253A%252F%252Fbj.meituan.com%252F">忘记密码？</a>
+                        </div>
+                        <div class=" login-btn">
+                            <span>登录</span>
+                        </div>   
+                        <div class="no-number forget-pwd">
+                            <span class="small-stdio-out">
+                                <span>提示：未注册美团账号的手机号，登录时将自动注册美团账号，且代表您已同意</span>
+                                <a class="free-register" href="/register/register.html">《美团网用户协议》</a>
+                            </span>
+                        </div>
+                    </div> -->
+                    <div class="colloporation">
+                        <p class="line"></p>
+                        <p class="line-txt">用合作网站账号登录</p>
+                        <p class="line"></p>
                     </div>
-                    <div class="frame">
-                        <svg class="icon user-icon" aria-hidden="true">
-                            <use xlink:href="#icon-shouji"></use>
-                        </svg>
-                        <input class="input-txt" type="password" placeholder="密码"">
+                    <div class="connect">
+                        <a class="QQ" href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&redirect_uri=https%3A%2F%2Fpassport.meituan.com%2Faccount%2Fcallback%2Ftencent&client_id=214506">
+                            <svg class="icon QQ" aria-hidden="true">
+                                <use xlink:href="#icon-unie652"></use>
+                            </svg>
+                        </a>
+                        <a class="weibo" href="https://api.weibo.com/oauth2/authorize?response_type=code&redirect_uri=https%3A%2F%2Fpassport.meituan.com%2Faccount%2Fcallback%2Fsina&client_id=579809138">
+                            <svg class="icon weibo" aria-hidden="true">
+                                <use xlink:href="#icon-weibo"></use>
+                            </svg>
+                        </a>
                     </div>
-                    <div class="forget-pwd">
-                        <span>
-                            <span class="small-stdio"></span>
-                            <span>七天内自动登录</span>
-                        </span>
-                        <a class="forgetpwd" href="https://passport.meituan.com/account/retrievepassword?service=www&continue=http%3A%2F%2Fwww.meituan.com%2Faccount%2Fsettoken%3Fcontinue%3Dhttps%253A%252F%252Fbj.meituan.com%252F">忘记密码？</a>
-                    </div>  
                 </form>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-top">
+                <ul class="footer-top-left">
+                    <li><a href="http://www.meituan.com/error/404">关于美团</a></li>
+                    <li><a href="http://www.meituan.com/error/404">美团承诺</a></li>
+                    <li><a href="http://www.hotjob.cn/wt/meituan/web/index?brandCode=meituan">加入我们</a></li>
+                    <li><a href="https://ecom.meituan.com/bizsettle/settle/merchantsSettle">商家入驻</a></li>
+                    <li><a href="http://www.meituan.com/help/faq">帮助中心</a></li>
+                    <li><a href="http://i.meituan.com/mobile/down/meituan?">美团手机版</a></li>
+                </ul>
+                <a href="http://www.meituan.com/error/404"><img src="/images/login-tui.png" alt=""></a>
+            </div>
+            <div class="footer-bottom">
+                <p>©2018 美团网团购 meituan.com 京ICP证070791号 京公网安备11010502025545号 电子公告服务规则</p>
             </div>
         </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="//at.alicdn.com/t/font_839449_crw9tobt4oa.js"></script>
+    <script src="//at.alicdn.com/t/font_839449_h5yrj7et5x.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <!-- <script type="text/javascript" src="js/jquery.cookie.js"></script> -->
     <!-- inject:js -->
     <!-- endinject -->

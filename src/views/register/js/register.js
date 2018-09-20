@@ -61,7 +61,7 @@ function pwdStrong(oPwd) {
 
 //确认密码
 function fnQpwd() {
-    if ($(".qr-pwd").val() == $(".creat-pwd").val()) {
+    if ($(".qr-pwd").val() == $(".creat-pwd").val() & $(".qr-pwd").val() != "") {
         return true;
     } else {
         return false;
@@ -110,43 +110,39 @@ function removeCookie( key ){
 
 
 
-var fnSname = false;
+var sname = false;
 var dynamicCode = false;
 var creatPwd = false;
 var qrPwd = false;
 
-//用户名
 $(".public-style").focus(function() {
     $(this).css("border-color","#2bb8aa");
 })
 
 
+//用户名
 $(".mobile-num").blur(function() {
     $(this).css("border-color","red");
-    // console.log($(this).css("border-color"))
     if (fnSname()) {
         var str = `<svg class="icon loading" aria-hidden="true">
                         <use xlink:href="#icon-jinggao"></use>
                     </svg>
                     检查中...`
         $(this).next("span").html(str);
-        var cookie = 'cookie';
-        // if(getCookie(username)) {
-        //     cookie = getCookie(username);
-        // }
-        if ($(this).val() == cookie) {
+        var cookie = JSON.parse( $.cookie('register') ||  '[]');
+        if ($(this).val() == cookie.name) {
             var str = `<svg class="icon false" aria-hidden="true">
                             <use xlink:href="#icon-jinggao"></use>
                         </svg>
                         此手机号已被注册过`
             $(this).next("span").html(str);
-        } else{
+        } else {
             var str = ` <svg class="icon true" aria-hidden="true">
                             <use xlink:href="#icon-icon_duihao-mian"></use>
                         </svg>`
             $(this).next("span").html(str);
              $(this).css("border-color","#aaa");
-             fnSname = true;
+             sname = true;
         }
     }else if ($(this).val() == "") {
         var str = `<svg class="icon false" aria-hidden="true">
@@ -161,7 +157,6 @@ $(".mobile-num").blur(function() {
                     请输入正确的11位手机号码`
         $(this).next("span").html(str);
     }
-    // $(this).css("border-color","red");
 })
 
 
@@ -220,26 +215,26 @@ $(".creat-pwd").keyup(function() {
     // console.log($(this).val().length);
     // console.log($(this).val());
     // console.log($(".weak").children());
-    // $(".weak").find(".yz-hide").css({"display":"block","background-color": "rgb(247,97,32)"}).animate({"width": "100%"},1500);
+    // $(".weak").find(".yz-hide").css({"display":"block","background-color": "rgb(247,97,32)"}).animate({"width": "100%"},500);
     if(res == "空") {
-        // $(".weak").find(".yz-hide").animate({"width": "0%"},1500);
-        // $(".mid").find(".yz-hide").animate({"width": "0%"},1500);
-        // $(".strong").find(".yz-hide").animate({"width": "0%"},1500);
-        $(".weak").find(".yz-hide").css({"background-color": "rgb(255, 137, 0)"}).animate({"width": "0%"},1500);
+        // $(".weak").find(".yz-hide").animate({"width": "0%"},500);
+        // $(".mid").find(".yz-hide").animate({"width": "0%"},500);
+        // $(".strong").find(".yz-hide").animate({"width": "0%"},500);
+        $(".weak").find(".yz-hide").css({"background-color": "rgb(255, 137, 0)"}).animate({"width": "0%"},500);
     } else if (res == "弱") {
-        $(".weak").find(".yz-hide").css({"background-color": "rgb(247,97,32)"}).animate({"width": "100%"},1500);
-        $(".mid").find(".yz-hide").css({"background-color": "rgb(247,97,32)"}).animate({"width": "0%"},1500);
-        $(".strong").find(".yz-hide").css({"background-color": "rgb(247,97,32)"}).animate({"width": "0%"},1500);
+        $(".weak").find(".yz-hide").css({"background-color": "rgb(247,97,32)"}).animate({"width": "100%"},500);
+        $(".mid").find(".yz-hide").css({"background-color": "rgb(247,97,32)"}).animate({"width": "0%"},500);
+        $(".strong").find(".yz-hide").css({"background-color": "rgb(247,97,32)"}).animate({"width": "0%"},500);
     } else if (res == "中") {
         // console.log(1111)
         // console.log($(".strong").find(".yz-hide").css("width"));
-        $(".weak").find(".yz-hide").css({"background-color": "rgb(255, 137, 0)"}).animate({"width": "100%"},1500);
-        $(".mid").find(".yz-hide").css({"background-color": "rgb(255, 137, 0)"}).animate({"width": "100%"},1500);
-        $(".strong").find(".yz-hide").css({"background-color": "rgb(255, 137, 0)"}).animate({"width": "0%"},1500)
+        $(".weak").find(".yz-hide").css({"background-color": "rgb(255, 137, 0)"}).animate({"width": "100%"},500);
+        $(".mid").find(".yz-hide").css({"background-color": "rgb(255, 137, 0)"}).animate({"width": "100%"},500);
+        $(".strong").find(".yz-hide").css({"background-color": "rgb(255, 137, 0)"}).animate({"width": "0%"},500)
     } else if (res == "强") {
-        $(".weak").find(".yz-hide").css({"background-color": "rgb(91, 171, 60)"}).animate({"width": "100%"},1500);
-        $(".mid").find(".yz-hide").css({"background-color": "rgb(91, 171, 60)"}).animate({"width": "100%"},1500);
-        $(".strong").find(".yz-hide").css({"background-color": "rgb(91, 171, 60)"}).animate({"width": "100%"},1500);
+        $(".weak").find(".yz-hide").css({"background-color": "rgb(91, 171, 60)"}).animate({"width": "100%"},500);
+        $(".mid").find(".yz-hide").css({"background-color": "rgb(91, 171, 60)"}).animate({"width": "100%"},500);
+        $(".strong").find(".yz-hide").css({"background-color": "rgb(91, 171, 60)"}).animate({"width": "100%"},500);
     }
     
 })
@@ -290,14 +285,31 @@ $(".qr-pwd").blur(function() {
         $(this).next("span").html(str);
     }
 })
-
-$("form").submit(function() {
-    if (fnSame || dynamicCode || creatPed || qrPwd) {
-        setCookie( "username" , $(".mobile-num").val(), 7 )
-        setCookie( "pwd" , $(".creat-pwd").val(), 7 )
-        $(window).attr('location','/login/login.html');
-        return true;
-    } else {
-        return false;
-    }
+$(function() {
+    $(".sub-btn").click(function() {
+        if (fnSname && dynamicCode && creatPwd && qrPwd) {
+            var json = {
+                "name": $(".mobile-num").val(),
+                "pwd": $(".qr-pwd").val()
+            }
+            $.cookie('register', JSON.stringify(json),{ expires: 7, path: '/' });
+            alert("注册成功！");
+            $(location).attr('href','/login/login.html');
+            return true;
+        } else {
+            return false;
+        }
+    })
 })
+
+
+
+// $(document).click(function() {
+//     var json = {
+//         "name": "很好笑",
+//         "pwd": "1211"
+
+//     }
+//     // $.cookie('username', JSON.stringify(json));
+//     console.log($.cookie('username'));
+// })
