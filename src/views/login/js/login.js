@@ -1,8 +1,6 @@
 $("btn").click(function() {
-    console.log(000)
-    console.log( JSON.parse( $.cookie('register')))
-    // if() {
-
-    // }
+    console.log(000);
+    // console.log( JSON.parse( $.cookie('register')))
 })
-// $("name")
+
+console.log(111);

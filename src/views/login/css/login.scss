@@ -110,6 +110,9 @@ section {
                 background-color: #2eb7aa;
                 border-color: #008177;
                 border-radius: 2px;
+                .btn {
+                    cursor: pointer;
+                }
             }
             .login-btn:hover {
                 background-color: #008177;
