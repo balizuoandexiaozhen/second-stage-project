@@ -1,3 +1,4 @@
+//Ajax获取全部分类列表
 $.ajax({
     type:"get",
     url:"/json/nav-category.json",
@@ -44,7 +45,7 @@ $.ajax({
 });
 
 
-//nav图片
+//Ajax获取nav图片
 $.ajax({
     type:"get",
     url:"/json/nav-img.json",
@@ -65,4 +66,34 @@ $.ajax({
         })
 
     }
+})
+
+//轮播图
+var timer = null;
+	var index = 0;
+	timer = setInterval( autoPlay , 4000 );
+	function autoPlay(){
+		index++;
+		if( index == $(".carousel-img").children().length){
+			index = 0;
+        }
+        
+		$(".carousel-img").children().eq(index).fadeIn(1500).siblings().fadeOut(1000);
+		$(".hover-list").children().eq(index).css("backgroung","#fff").siblings().css("backgroung","rgba(255,255,255,.5)");
+	}
+	$(".hover-list").children().mouseenter(function(){
+		clearInterval(timer);
+		index = $(this).index()-1;
+		autoPlay();
+	}).mouseleave(function(){
+		timer = setInterval( autoPlay , 2000 );
+    })
+    
+//鼠标移入轮播图div箭头显示
+$(".nav-carousel").hover(function() {
+    $(".left").animate("opacity", 1);
+    $(".right").animate("opacity", 1);
+},function() {
+    $(".left").animate("opacity", 0);
+    $(".right").animate("opacity", 0);
 })

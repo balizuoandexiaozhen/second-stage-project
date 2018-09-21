@@ -1,4 +1,4 @@
-//header-bar特效
+//header-bar特效(头部右侧导航)
 $(".haschild").hover(function() {
     $(this).addClass("header-bar-list-active")
     $(this).children("a").css({"color": "#31BBAC"});
@@ -8,7 +8,8 @@ $(".haschild").hover(function() {
     $(this).children("a").css({"color": "#999"});
     $(this).find(".header-bar-list-show").css({"display": "none"})
 })
-//网站导航
+
+//头部右侧网站导航
 $(".haschild").eq(2).hover(function() {
     $(this).find(".header-bar-list-show").css({"display": "flex"})
 },function() {
@@ -27,7 +28,7 @@ $(".header-bar-list-show").find("a").hover(function() {
     $(this).css({"color": "#999"})
 })
 
-//头部搜索框下的内容
+//ajax获取头部搜索框下的内容
 $.ajax({
     type:"get",
     url:"/json/header-search.json",
@@ -57,7 +58,7 @@ $.ajax({
             $(this).css({"color": "#666"});
         })
 
-
+        //获取焦点出现提示框
         $(".header-search-txt").focus(function() {
             $(".header-search-hide").css("display","block")
         })
@@ -74,3 +75,21 @@ $.ajax({
 // },function() {
 //     $(this).css({"color": "#000"});
 // })
+
+//吸顶效果
+var $top = $("header").offset().top;
+$(window).scroll(function() {
+    if($("html,body").scrollTop() >= $top) {
+        $("header").css({
+            "position": "fixed",
+            "z-index": 9999,
+            "top": 0,
+            "right": 0,
+            "left": 0
+        })
+    } else {
+        $("header").css({
+            "position": "static"
+        })
+    }
+})

@@ -17,6 +17,24 @@
             width: 10000000px;
             justify-content: flex-start;
             flex-flow: nowrap;
+            position: relative;
+            .maoyan-left {
+                position: absolute;
+                z-index: 10;
+                left: 10px;
+                top: 45%;
+            }
+            .maoyan-right {
+                position: absolute;
+                z-index: 10;
+                right: 10px;
+                top: 45%;
+            }
+
+            .maoyan-right-jiantou,.maoyan-left-jiantou {
+                color: rgba(0,0,0,.7);
+                font-size: 35px;
+            }
             .maoyan-list {
                 margin: 0 10px;
                 flex-shrink: 0;
