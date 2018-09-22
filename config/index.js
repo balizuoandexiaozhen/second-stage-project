@@ -15,7 +15,7 @@ const config = {
         port: 8000,
         livereload: true 
     },
-    pages: [ 'index', 'list', 'login','register'],
+    pages: [ 'index', 'list', 'login','register','details', 'shopping-cart', 'check-shoppingcart'],
     cssoptions: {// css配置
         'index': { // index页面的css
             'common': [ //index页面处理之后的common.min.css需要合并的文件
@@ -25,11 +25,37 @@ const config = {
              // index页面处理之后的index.min.css需要合并的文件
             'index': './src/views/index/stylesheets/index/*.scss'
         },
-        'list': {
-            'list': [
+        'list': { // list
+            'common': [ //list.min.css需要合并的文件
                 './src/stylesheets/reset.scss',
-                './src/views/list/*/*.scss'
-            ]
+                './src/views/list/stylesheets/common/*.scss'
+            ],
+             // list页面处理之后的index.min.css需要合并的文件
+            'list': './src/views/list/stylesheets/list/*.scss'
+        },
+        'details': { // index页面的css
+            'common': [ //index页面处理之后的common.min.css需要合并的文件
+                './src/stylesheets/reset.scss',
+                './src/views/details/css/common/*.scss'
+            ],
+             // index页面处理之后的index.min.css需要合并的文件
+            'details': './src/views/details/css/details/*.scss'
+        },
+        'shopping-cart': { // index页面的css
+            'common': [ //index页面处理之后的common.min.css需要合并的文件
+                './src/stylesheets/reset.scss',
+                './src/views/shopping-cart/css/common/*.scss'
+            ],
+             // index页面处理之后的index.min.css需要合并的文件
+            'shopping-cart': './src/views/shopping-cart/css/shopping-cart/*.scss'
+        },
+        'check-shoppingcart': { // index页面的css
+            'common': [ //index页面处理之后的common.min.css需要合并的文件
+                './src/stylesheets/reset.scss',
+                './src/views/check-shoppingcart/css/common/*.scss'
+            ],
+             // index页面处理之后的index.min.css需要合并的文件
+            'check-shoppingcart': './src/views/check-shoppingcart/css/check-shoppingcart/*.scss'
         },
         'register': {
             'register': [
@@ -50,6 +76,9 @@ const config = {
             vendor: './src/views/index/javascripts/vendor.js'
         },
         'list': './src/views/list/javascripts/list.js',
+        'details': './src/views/details/js/details.js',
+        'shopping-cart': './src/views/shopping-cart/js/shopping-cart.js',
+        'check-shoppingcart': './src/views/check-shoppingcart/js/check-shoppingcart.js',
         'login': './src/views/login/js/login.js',
         'register': './src/views/register/js/register.js'
     }

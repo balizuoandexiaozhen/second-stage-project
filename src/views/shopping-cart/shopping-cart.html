@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车页</title>
+    <!-- inject:css -->
+    <!-- endinject -->
+</head>
+
+<body>
+    <div class="header-bar">
+        <div class="header-bar-center">
+            <div class="header-bar-left">
+                <span class="curent-city">
+                    <svg class="icon " aria-hidden="true">
+                        <use xlink:href="#icon-location"></use>
+                    </svg>
+                    <span id="local-city">北京</span>
+                </span>
+                <a href="http://www.meituan.com/changecity/" class="change-city">切换城市</a>
+                <span>
+                    <span>[</span>
+                    <span class="local-city">
+                        <a href="http://dachangzizhixian.meituan.com/" class="city-guess">大厂回族自治县</a>
+                        <a href="https://bj.meituan.com/" class="city-guess">廊坊</a>
+                        <a href="http://guanxian.meituan.com/" class="city-guess">固安县</a>
+                    </span>
+                    <span>]</span>
+                </span>
+                <a href="/login/login.html" class="login-in">立即登录</a>
+                <a href="/register/register.html" class="login-out">注册</a>
+            </div>
+            <div class="header-bar-right">
+                <ul class="header-bar-list">
+                    <li id="mymeituan" class="haschild">
+                        <a href="">我的美团</a>
+                        <ul class="mine-meituan header-bar-list-show">
+                            <li><a href="">我的订单</a></li>
+                            <li><a href="">我的收藏</a></li>
+                            <li><a href="">抵用券</a></li>
+                            <li><a href="">账户设置</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="app">手机APP</a></li>
+                    <li id="merchant-center" class="haschild">
+                        <a href="">商家中心</a>
+                        <ul class="header-bar-list-show merchant-center">
+                            <li><a href="">登录商家中心</a></li>
+                            <li><a href="">美团智能收银</a></li>
+                            <li><a href="">我想合作</a></li>
+                            <li><a href="">手机免费开店</a></li>
+                            <li><a href="">餐饮代理商招募</a></li>
+                            <li><a href="">商家申请开票</a></li>
+                        </ul>
+                    </li>
+                    <li id="site-navigation" class="haschild">
+                        <a href="">网站导航</a>
+                        <div class="header-bar-list-show site-navigation">
+                            <div class="site-navigation-left">
+                                <div class="site-navigation-left-titel">
+                                    <h3>酒店旅游</h3>
+                                    <div class="hotel-tourismm-content">
+                                        <ul class="hotel-tourismm-list">
+                                            <li><a href="">国际机票</a></li>
+                                            <li><a href="">经济型酒店</a></li>
+                                            <li><a href="">公寓</a></li>
+                                            <li><a href="">青年旅舍</a></li>
+                                            <li><a href="">农家院</a></li>
+                                        </ul>
+                                        <ul class="hotel-tourismm-list">
+                                            <li><a href="">火车票</a></li>
+                                            <li><a href="">主题酒店</a></li>
+                                            <li><a href="">豪华酒店</a></li>
+                                            <li><a href="">度假酒店</a></li>
+                                        </ul>
+                                        <ul class="hotel-tourismm-list">
+                                            <li><a href="">榛果民宿</a></li>
+                                            <li><a href="">商务酒店</a></li>
+                                            <li><a href="">客栈</a></li>
+                                            <li><a href="">别墅</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="site-navigation-left-titel">
+                                    <h3>吃美食</h3>
+                                    <div class="hotel-tourismm-content">
+                                        <ul class="hotel-tourismm-list">
+                                            <li><a href="">烤鱼</a></li>
+                                            <li><a href="">烧烤</a></li>
+                                            <li><a href="">火锅</a></li>
+                                        </ul>
+                                        <ul class="hotel-tourismm-list">
+                                            <li><a href="">特色小吃</a></li>
+                                            <li><a href="">代金券</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="site-navigation-left-titel">
+                                    <h3>看电影</h3>
+                                    <div class="hotel-tourismm-content">
+                                        <ul class="hotel-tourismm-list">
+                                            <li><a href="">热映电影</a></li>
+                                            <li><a href="">热门电影</a></li>
+                                            <li><a href="">热门电影口碑榜</a></li>
+                                            <li><a href="">最受期待电影</a></li>
+                                            <li><a href="">北美票房榜</a></li>
+                                            <li><a href="">电影排行榜</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="site-navigation-right">
+                                <h3>手机应用</h3>
+                                <div class="site-navigation-right-app">
+                                    <a href=""><img src="/images/meituan.png" alt=""></a>
+                                    <a href=""><img src="/images/waimai.png" alt=""></a>
+                                    <a href=""><img src="/images/zhenguo.png" alt=""></a>
+                                    <a href=""><img src="/images/dianping.png" alt=""></a>
+                                    <a href=""><img src="/images/maoyan.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="header-bigcenter">
+            <div class="header-top">
+                <div class="header-logo">
+                    <img src="/images/logo.png" alt="">
+                </div>
+                <div class="header-center">
+                    <div class="header-search">
+                        <input type="text" class="header-search-txt" placeholder="搜索商家或地点">
+                        <button class=" header-search-btn"><span><i class="iconfont">&#xe60f;</i></span></button>
+                        <div class="header-search-hide">
+                            <h3>热门搜索</h3>
+                            <p>
+                                <!-- <span>热门搜索</span><span>热门搜索</span> -->
+                            </p>
+                        </div>
+                    </div>
+                    <div class="header-center-list">
+                        <ul>
+                            <!-- <li><a href="">故宫博物院</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <ul class="header-right-list">
+                        <li>
+                            <a href="http://www.meituan.com/error/404" class="header-right-tui"><i class="iconfont">&#xe67b;</i><span>随时退</span></a>
+                        </li>
+                        <li>
+                            <a href="http://www.meituan.com/error/404" class="header-right-tui"><i class="iconfont">&#xe610;</i><span>不满意免单</span></a>
+                        </li>
+                        <li>
+                            <a href="http://www.meituan.com/error/404" class="header-right-tui"><i class="iconfont">&#xe747;</i><span>过期退</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="section-center">
+
+
+
+            <div class="footer-nav">
+                <div class="list">
+                    <ul>
+                        <p>用户帮助</p>
+                        <li><a href="">申请退款</a></li>
+                        <li><a href="">查看美团券密码</a></li>
+                        <li><a href="">常见问题</a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                    <ul>
+                        <p>用户帮助</p>
+                        <li><a href="">申请退款</a></li>
+                        <li><a href="">查看美团券密码</a></li>
+                        <li><a href="">常见问题</a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <ul>
+                        <p>用户帮助</p>
+                        <li><a href="">申请退款</a></li>
+                        <li><a href="">查看美团券密码</a></li>
+                        <li><a href="">常见问题</a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <ul>
+                        <p>用户帮助</p>
+                        <li><a href="">申请退款</a></li>
+                        <li><a href="">查看美团券密码</a></li>
+                        <li><a href="">常见问题</a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <ul>
+                        <p>用户帮助</p>
+                        <li><a href="">申请退款</a></li>
+                        <li><a href="">查看美团券密码</a></li>
+                        <li><a href="">常见问题</a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <ul>
+                        <p>消费者服务热线</p>
+                        <li><a href="">外卖消费者： 10109777</a></li>
+                        <li><a href="">查看美团券密码</a></li>
+                        <li><a href="">常见问题</a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//at.alicdn.com/t/font_839449_r7iaqjz224.js"></script>
+    <!-- inject:js -->
+    <!-- endinject -->
+</body>
+
+</html>
