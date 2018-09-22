@@ -89,7 +89,7 @@ var timer = null;
 		timer = setInterval( autoPlay , 2000 );
     })
     
-//鼠标移入轮播图div箭头显示
+//鼠标移入轮播图div箭头显示`
 $(".nav-carousel").hover(function() {
     $(".left").animate("opacity", 1);
     $(".right").animate("opacity", 1);
