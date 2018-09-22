@@ -15,7 +15,7 @@ const config = {
         port: 8000,
         livereload: true 
     },
-    pages: [ 'index', 'list', 'login','register','details', 'shopping-cart', 'check-shoppingcart'],
+    pages: [ 'index', 'list', 'login','register','details', 'shopping-cart', 'add-shoppingcart'],
     cssoptions: {// css配置
         'index': { // index页面的css
             'common': [ //index页面处理之后的common.min.css需要合并的文件
@@ -49,13 +49,13 @@ const config = {
              // index页面处理之后的index.min.css需要合并的文件
             'shopping-cart': './src/views/shopping-cart/css/shopping-cart/*.scss'
         },
-        'check-shoppingcart': { // index页面的css
+        'add-shoppingcart': { // index页面的css
             'common': [ //index页面处理之后的common.min.css需要合并的文件
                 './src/stylesheets/reset.scss',
-                './src/views/check-shoppingcart/css/common/*.scss'
+                './src/views/add-shoppingcart/css/common/*.scss'
             ],
              // index页面处理之后的index.min.css需要合并的文件
-            'check-shoppingcart': './src/views/check-shoppingcart/css/check-shoppingcart/*.scss'
+            'add-shoppingcart': './src/views/add-shoppingcart/css/add-shoppingcart/*.scss'
         },
         'register': {
             'register': [
@@ -78,7 +78,7 @@ const config = {
         'list': './src/views/list/javascripts/list.js',
         'details': './src/views/details/js/details.js',
         'shopping-cart': './src/views/shopping-cart/js/shopping-cart.js',
-        'check-shoppingcart': './src/views/check-shoppingcart/js/check-shoppingcart.js',
+        'add-shoppingcart': './src/views/add-shoppingcart/js/add-shoppingcart.js',
         'login': './src/views/login/js/login.js',
         'register': './src/views/register/js/register.js'
     }
