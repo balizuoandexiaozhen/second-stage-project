@@ -274,6 +274,7 @@ section {
                         width: 550px;
                         height: 240px;
                         position: relative;
+                        cursor: pointer;
                         // overflow: hidden;
                         .carousel-img {
                             position: relative;
@@ -305,10 +306,10 @@ section {
                                 // background: red;
                                 float: left;
                                 background: rgba(255,255,255,.5);
+                                border-radius: 1px;
                             }
                             li:hover {
                                 cursor: pointer;
-                                border-radius: 1px;
                                 background: #ffff;
                             }
                         }
@@ -317,14 +318,16 @@ section {
                             z-index: 20;
                             left: 20px;
                             top: 45%;
-                            // opacity: 0;
+                            opacity: 0;
+                            transition: opacity 1s;
                         }
                         .right {
                             position: absolute;
                             z-index: 10;
                             right: 20px;
                             top: 45%;
-                            // opacity: 0;
+                            opacity: 0;
+                            transition: opacity 1s;
                         }
                         .right-jiantou,.left-jiantou {
                             color: rgba(0,0,0,.7);
@@ -336,6 +339,7 @@ section {
                         height:240px;
                         // background: blue;
                         background-size: contain;
+                        cursor: pointer;
                     }
                     .nav-login {
                         width: 230px;
@@ -367,6 +371,13 @@ section {
                         }
                     }
                 }
+
+                .nav-carousel:hover .left {
+                    opacity: 1;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+                }
+                .nav-carousel:hover .right {
+                    opacity: 1;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+                }
                 .nav-content-bottom {
                     display: flex;
                     justify-content: space-between;
@@ -375,18 +386,21 @@ section {
                         height: 165px;
                         // background: green;
                         background-size: contain;
+                        cursor: pointer;
                     }
                     .nav-content-bottom2 {
                         width: 270px;
                         height: 165px;
                         // background: red;
                         background-size: contain;
+                        cursor: pointer;
                     }
                     .nav-content-bottom3 {
                         width: 150px;
                         height: 165px;
                         // background: blue;
                         background-size: contain;
+                        cursor: pointer;
                     }
                     .nav-qr-code {
                         display: flex;

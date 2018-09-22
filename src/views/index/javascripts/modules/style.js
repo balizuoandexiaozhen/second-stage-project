@@ -3,7 +3,7 @@ $.ajax({
     url:"/json/yougediao.json",
     datatype:"json",
     success: function(res){
-        console.log(res)
+        // console.log(res)
     }
 })
 

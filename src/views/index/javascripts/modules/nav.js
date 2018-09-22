@@ -59,10 +59,10 @@ $.ajax({
         $.each(res.carousel,function(index,val){
             str += `<li></li>`;
         })
-        $(".nav-carousel").find("ul").html(str)
+        $(".nav-carousel").find(".carousel-img").html(str);
+        $(".nav-carousel").find(".hover-list").html(str)
         $.each(res.carousel,function(index,val){
-            // console.log(val);
-            $(".nav-carousel").find("li").eq(index).css("background-image", "url("+ val +")")
+            $(".nav-carousel").find(".carousel-img li").eq(index).css("background-image", "url("+ val +")")
         })
 
     }
@@ -70,30 +70,48 @@ $.ajax({
 
 //轮播图
 var timer = null;
-	var index = 0;
-	timer = setInterval( autoPlay , 4000 );
-	function autoPlay(){
-		index++;
-		if( index == $(".carousel-img").children().length){
-			index = 0;
-        }
-        
-		$(".carousel-img").children().eq(index).fadeIn(1500).siblings().fadeOut(1000);
-		$(".hover-list").children().eq(index).css("backgroung","#fff").siblings().css("backgroung","rgba(255,255,255,.5)");
-	}
-	$(".hover-list").children().mouseenter(function(){
-		clearInterval(timer);
-		index = $(this).index()-1;
-		autoPlay();
-	}).mouseleave(function(){
-		timer = setInterval( autoPlay , 2000 );
-    })
+var index = 0;
+timer = setInterval( autoPlay , 4000 );
+function autoPlay(){
+    index++;
+    if( index == $(".carousel-img").children().length){
+        index = 0;
+    }
     
+    $(".carousel-img").children().eq(index).fadeIn(1500).siblings().fadeOut(1000);
+    // $(".hover-list").children().eq(index).css("backgroung","#fff").siblings().css("backgroung","rgba(255,255,255,.5)");
+}
+//鼠标移入换图
+$(".hover-list").on("mouseover", "li", function(){
+    clearInterval(timer);
+    index = $(this).index()-1;
+    autoPlay();
+}).on("mouseleave", "li", function(){
+    timer = setInterval( autoPlay , 2000 );
+})
+    
+
 //鼠标移入轮播图div箭头显示`
-$(".nav-carousel").hover(function() {
-    $(".left").animate("opacity", 1);
-    $(".right").animate("opacity", 1);
-},function() {
-    $(".left").animate("opacity", 0);
-    $(".right").animate("opacity", 0);
+// $(".nav-carousel").hover(function() {
+//     $(".left").animate("opacity", "1");
+//     $(".right").animate("opacity", "1");
+// },function() {
+//     $(".left").animate("opacity", 0);
+//     $(".right").animate("opacity", 0);
+// })
+//鼠标点击换图
+$(".left-jiantou").click(function() {
+    clearInterval(timer);
+    index--;
+    if( index == -1){
+        index = $(".carousel-img").children().length - 1;
+    }
+    $(".carousel-img").children().eq(index).fadeIn(1500).siblings().fadeOut(1000);
+    timer = setInterval( autoPlay , 4000 );
+})
+
+$(".right-jiantou").click(function() {
+    clearInterval(timer);
+    autoPlay();
+    timer = setInterval( autoPlay , 4000 );
 })

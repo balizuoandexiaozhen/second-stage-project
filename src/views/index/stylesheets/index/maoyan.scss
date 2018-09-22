@@ -1,5 +1,5 @@
 .maoyanmovie {
-    overflow: hidden;
+    // overflow: hidden;
         .style-top {
             background: linear-gradient(to right, rgb(250, 60, 104) 2%, rgb(254, 70, 77) 97%) rgb(250, 60, 104);
             justify-content: space-between;
@@ -13,22 +13,40 @@
             //     align-items: center;
             // }
         }
+        .style-content:hover .maoyan-right{
+            opacity: 1;
+        }
+        .style-content:hover .maoyan-left{
+            opacity: 1;
+        }
         .style-content {
-            width: 10000000px;
-            justify-content: flex-start;
-            flex-flow: nowrap;
             position: relative;
+            overflow: hidden;
+            height: 300px;
+            .maoyan-content {
+                display: flex;
+                width: 10000000px;
+                justify-content: flex-start;
+                flex-flow: nowrap;
+                position: absolute;
+                left: 10px;
+                top: 10px;
+            }
             .maoyan-left {
                 position: absolute;
                 z-index: 10;
                 left: 10px;
                 top: 45%;
+                opacity: 0;
+                transition: opacity 1s;
             }
             .maoyan-right {
                 position: absolute;
                 z-index: 10;
                 right: 10px;
                 top: 45%;
+                opacity: 0;
+                transition: opacity 1s;
             }
 
             .maoyan-right-jiantou,.maoyan-left-jiantou {
@@ -36,7 +54,9 @@
                 font-size: 35px;
             }
             .maoyan-list {
-                margin: 0 10px;
+                margin-left: 9px;
+                margin-right: 10px;
+                // float: left;
                 flex-shrink: 0;
                 width: 215px;
                 position: relative;
