@@ -100,6 +100,7 @@
                     border-top: 1px solid #e5e5e5;
                     padding: 20px 0;
                     display: flex;
+                    // display: none;
                     .ranking {
                         display: inline-block;
                         width: 30px;
@@ -151,6 +152,11 @@
                         
                     }
                 }
+                display: none;
+            }
+            
+            .list-box:nth-of-type(2) {
+                display: block;
             }
         }
         // margin-right: 20px;
