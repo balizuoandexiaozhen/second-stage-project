@@ -1,3 +1,5 @@
+const proxy = require('http-proxy-middleware');
+
 //全局的配置
 const config = {
     htmloptions: { //html压缩的配置
@@ -13,7 +15,25 @@ const config = {
     serveroptions: {// 热更新服务
         root: './dist',
         port: 8000,
-        livereload: true 
+        livereload: true,
+        middleware: function(connect, opt) {
+            return [
+                proxy('/myapi/bj',  {
+                    target: 'http://bj.meituan.com',
+                    changeOrigin:true,
+                    pathRewrite: {
+                        '/myapi/bj': ''
+                    }
+                }),
+                proxy('/myapi/w3', {
+                    target: 'http://www.meituan.com/',
+                    changeOrigin:true,
+                    pathRewrite: {
+                        '/myapi/w3': ''
+                    }
+                })
+            ]
+        }
     },
     pages: [ 'index', 'list', 'login','register','details', 'shopping-cart', 'add-shoppingcart'],
     cssoptions: {// css配置
@@ -82,7 +102,7 @@ const config = {
         'login': './src/views/login/js/login.js',
         'register': './src/views/register/js/register.js'
     }
-} 
+}
 
 // 把config暴露出去，是为了在其他地方用，只能暴露一次
 module.exports = config
